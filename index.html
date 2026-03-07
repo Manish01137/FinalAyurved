@@ -16,7 +16,13 @@
 <header class="navbar" role="banner">
   <div class="container navbar-inner">
     <a href="index.html" class="navbar-logo" aria-label="Aksharam Ayurved Home">
-      <img src="images/logoBG.png" alt="Aksharam Ayurved Panchakarma Hospital Logo" style="height: 50px; width: auto; object-fit: contain;">
+      <div class="logo-wrap">
+        <img src="images/logoBG.png" alt="Aksharam Ayurved Logo">
+        <div class="logo-text">
+            <span class="brand-name">Aksharam Ayurved</span>
+            <span class="brand-sub">Panchakarma Hospital</span>
+        </div>
+      </div>
     </a>
     <nav class="navbar-nav" role="navigation" aria-label="Main Navigation">
       <a href="index.html" class="nav-link">Home</a>
@@ -25,12 +31,6 @@
       <a href="contact.html" class="nav-link">Contact Us</a>
     </nav>
     <div class="navbar-right">
-      <div class="social-icons">
-        <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="#" class="social-icon" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
-        <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-      </div>
       <a href="contact.html" class="btn btn-primary navbar-book-btn">Book Appointment</a>
     </div>
     <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
@@ -86,6 +86,28 @@
   </div>
 </section>
 
+<!-- ═══ TRUST BADGES ═══════════════════════════════════════ -->
+<div class="trust-band">
+  <div class="container container-trust">
+    <div class="trust-item" data-aos="fade-up" data-aos-delay="0">
+      <div class="trust-icon"><i class="fas fa-star"></i></div>
+      <div class="trust-text"><strong>160+</strong> Five-Star Reviews</div>
+    </div>
+    <div class="trust-item" data-aos="fade-up" data-aos-delay="100">
+      <div class="trust-icon"><i class="fas fa-users"></i></div>
+      <div class="trust-text"><strong>5000+</strong> Patients Treated</div>
+    </div>
+    <div class="trust-item" data-aos="fade-up" data-aos-delay="200">
+      <div class="trust-icon"><i class="fas fa-award"></i></div>
+      <div class="trust-text"><strong>8+ Years</strong> Experience</div>
+    </div>
+    <div class="trust-item" data-aos="fade-up" data-aos-delay="300">
+      <div class="trust-icon"><i class="fas fa-globe"></i></div>
+      <div class="trust-text"><strong>Global</strong> Consultations</div>
+    </div>
+  </div>
+</div>
+
 <!-- ═══ SERVICES OVERVIEW ══════════════════════════════════ -->
 <section class="services-section section-pad" id="services-overview">
   <div class="container">
@@ -129,33 +151,6 @@
   </div>
 </section>
 
-<!-- ═══ WHY CHOOSE US / STATS ══════════════════════════════ -->
-<section class="stats-section section-pad" id="why-us">
-  <div class="container">
-    <div class="text-center" style="margin-bottom:44px" data-aos="fade-up">
-      <span class="badge" style="background:rgba(255,255,255,.15);color:#fff">Why Choose Us</span>
-      <h2 style="color:#fff">Trusted by Thousands Across India &amp; the World</h2>
-    </div>
-    <div class="stats-grid">
-      <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="stat-num" data-count="8" data-suffix="+">8+</div>
-        <div class="stat-label">Years Healing Experience</div>
-      </div>
-      <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="stat-num" data-count="3">3</div>
-        <div class="stat-label">Languages Supported</div>
-      </div>
-      <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="stat-num"><i class="fas fa-user-md" style="font-size:2.6rem;color:var(--green-100)"></i></div>
-        <div class="stat-label">Expert Vaidya – MD Panchakarma</div>
-      </div>
-      <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
-        <div class="stat-num" data-count="5000" data-suffix="+">5000+</div>
-        <div class="stat-label">Patients Treated</div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <!-- ═══ FEATURED TREATMENTS (SPLIT LAYOUT) ═════════════════ -->
 <section class="section-pad" style="background:var(--bg)" id="treatments">
@@ -212,23 +207,7 @@
   </div>
 </section>
 
-<!-- ═══ DOCTOR SPOTLIGHT ════════════════════════════════════ -->
-<section class="section-pad" style="background:var(--bg-card)" id="doctor-spotlight">
-  <div class="container">
-    <div class="split-row" style="gap:60px" data-aos="fade-up">
-      <div class="split-content" style="padding-right:20px;">
-        <span class="badge">Chief Physician</span>
-        <h2>Vaidya Dolly Solanki Makwana</h2>
-        <h4 style="color:var(--green-700); margin-bottom:20px;">BAMS, MD Panchakarma</h4>
-        <p>A passionate healer with rooted expertise in Ayurvedic tradition, Vaidya Dolly has dedicated over 8 years to transforming lives. Her clinical excellence spans Panchakarma, fertility, and women's holistic health, earning the trust of thousands across India and 9+ countries globally.</p>
-        <a href="contact.html" class="btn btn-primary" style="margin-top:14px;"><i class="fas fa-calendar-check"></i> Book Consultation</a>
-      </div>
-      <div class="split-img-wrap" style="text-align:center;">
-        <img src="images/doctor.webp" alt="Vaidya Dolly - Ayurvedic Physician" style="border-radius: 16px; object-fit: cover; max-width: 420px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); width: 100%; height: auto;" loading="lazy"/>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- ═══ TESTIMONIALS ═══════════════════════════════════════ -->
 <section class="testimonials-section section-pad" id="testimonials">
@@ -238,39 +217,103 @@
       <h2 class="section-title">What Our Patients <span class="text-green">Say</span></h2>
       <p class="section-subtitle">Real healing journeys from real people who transformed their lives through authentic Ayurveda.</p>
     </div>
-    <div class="testimonials-grid">
+    <div class="testimonials-grid" id="testimonial-slider">
       <div class="testimonial-card" data-aos="fade-up" data-aos-delay="0">
         <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="testimonial-text">"After years of suffering from chronic migraines and digestive issues, Vaidya Dolly's personalised Panchakarma treatment gave me my life back. Within 3 weeks, the difference was incredible. Highly recommended!"</p>
+        <p class="testimonial-text">"Panchakarma consultancy with Dr. Dolly benefited me greatly. She combines Ayurvedic science with spiritual and emotional knowledge. Personal care, vast experience, and genuine guidance. Thank you for your attention and care."</p>
         <div class="testimonial-author">
-          <div class="testimonial-avatar">P</div>
+          <div class="testimonial-avatar">H</div>
           <div>
-            <div class="testimonial-name">Priya Sharma</div>
-            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> Mumbai, India</div>
+            <div class="testimonial-name">Hardik Mehta</div>
+            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> Gujarat</div>
           </div>
         </div>
       </div>
       <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
         <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="testimonial-text">"We traveled from Canada specifically for the Beej Shuddhi program. After two failed IVF cycles, we are now blessed with a healthy baby boy. Aksharam Ayurved is a miracle centre!"</p>
+        <p class="testimonial-text">"Aapke ilaaj aur vaman chikitsa ke baad mujhe itna sukoon mila jo lafzon mein bayan nahi kar sakti. Positivity aur himmat ka naya ehsaas mila hai. Aap jaise doctor milna ek barkat hai."</p>
         <div class="testimonial-author">
-          <div class="testimonial-avatar">R</div>
+          <div class="testimonial-avatar">J</div>
           <div>
-            <div class="testimonial-name">Ravi &amp; Sunita Patel</div>
-            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> Ontario, Canada</div>
+            <div class="testimonial-name">Jenifar Bagban</div>
+            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> Gujarat</div>
           </div>
         </div>
       </div>
       <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
         <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-        <p class="testimonial-text">"The Sharadiya Virechan program was a life-changing experience. Vaidya ji's deep knowledge and compassionate approach helped me lose 12 kg and reverse my pre-diabetic condition naturally."</p>
+        <p class="testimonial-text">"Panchakarma treatment under Dr. Dolly helped control my PCOD and hypertension. I feel energetic and learned valuable Ayurvedic lifestyle and food habits. Very impactful guidance for me and my family."</p>
         <div class="testimonial-author">
-          <div class="testimonial-avatar">A</div>
+          <div class="testimonial-avatar">I</div>
           <div>
-            <div class="testimonial-name">Amit Desai</div>
-            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> Ahmedabad, India</div>
+            <div class="testimonial-name">Iti Parikh</div>
+            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> Gujarat</div>
           </div>
         </div>
+      </div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-text">"We were recommended Aksharam Ayurved and Dr. Dolly ma’am, and it turned out to be the best decision of our life. Initially we were skeptical about online Panchakarma, but after consulting her we felt complete trust. The treatment helped us not only lose stubborn weight but also achieve pregnancy naturally after struggling for two years."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">P</div>
+          <div>
+            <div class="testimonial-name">Payal Tank</div>
+            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> Maharashtra</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-text">"Me and my wife underwent Panchakarma treatment under Dr. Dolly’s guidance. Our body felt light, energetic, and detoxified. She explained every step scientifically and was always available during the treatment. Vast knowledge of Ayurveda. Highly recommendable."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">M</div>
+          <div>
+            <div class="testimonial-name">Manthan Rathod</div>
+            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> Ahmedabad</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card" data-aos="fade-up" data-aos-delay="500">
+        <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p class="testimonial-text">"I completed Panchakarma treatment in Florida, USA with Dr. Dolly from India. My cholesterol, lipid profile, and AC levels returned to normal after detox. I lost 25 pounds and feel rejuvenated. Truly life-changing experience."</p>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar">D</div>
+          <div>
+            <div class="testimonial-name">Dipak Jaiswal</div>
+            <div class="testimonial-loc"><i class="fas fa-map-marker-alt" style="font-size:10px;color:var(--green-500)"></i> USA</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CLINIC GALLERY ══════════════════════════════════════ -->
+<section class="gallery-section section-pad" id="gallery" style="background:var(--bg-warm);">
+  <div class="container">
+    <div class="text-center" data-aos="fade-up">
+      <span class="badge">Inside Our Clinic</span>
+      <h2 class="section-title">Experience <span class="text-green">Authentic Healing</span></h2>
+      <p class="section-subtitle">A glimpse into our serene spaces and authentic Ayurvedic therapies.</p>
+    </div>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="0">
+        <img src="images/panchakarma.png" alt="Panchakarma Therapy" loading="lazy">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+        <img src="images/virechan.png" alt="Virechan Treatment" loading="lazy">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+        <img src="images/kati_basti.png" alt="Kati Basti Treatment" loading="lazy">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+        <img src="images/shirodhara.png" alt="Shirodhara Treatment Room" loading="lazy">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+        <img src="images/herbal_medicine.png" alt="Ayurvedic Herbs" loading="lazy">
+      </div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+        <img src="images/massage_therapy.png" alt="Ayurvedic Oils" loading="lazy">
       </div>
     </div>
   </div>
@@ -314,8 +357,8 @@
   <div class="container">
     <div class="text-center" data-aos="fade-up">
       <span class="badge">Get in Touch</span>
-      <h2 class="section-title">Schedule Your <span class="text-green">Consultation</span></h2>
-      <p class="section-subtitle">Take the first step toward holistic healing. Book your appointment today.</p>
+      <h2 class="section-title">Begin Your <span class="text-green">Healing Journey</span></h2>
+      <p class="section-subtitle" style="font-size:1.15rem; color:var(--green-900); font-weight:500;">Schedule Your Personalized Consultation Today.</p>
     </div>
     <div class="consultation-grid" data-aos="fade-up" data-aos-delay="100">
       <div class="form-card">
@@ -338,7 +381,7 @@
             <label for="hc-message">Additional Message</label>
             <textarea id="hc-message" class="form-control" placeholder="Describe your health concern or treatment of interest…"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary form-submit" id="home-form-submit"><i class="fas fa-paper-plane"></i> Send Message</button>
+          <button type="submit" class="btn btn-primary form-submit" id="home-form-submit" style="font-size:1.05rem; min-height:54px;"><i class="fas fa-calendar-check"></i> Request Appointment</button>
         </form>
       </div>
       <div>
@@ -386,12 +429,6 @@
           <img src="images/logoBG.png" alt="Aksharam Ayurved Panchakarma Hospital Logo" style="height: 60px; margin-bottom: 15px; width: auto; object-fit: contain;">
         </div>
         <p class="footer-desc">Authentic Panchakarma and Ayurvedic hospital dedicated to holistic healing of body, mind, and soul. Guided by ancient wisdom, delivered with modern expertise.</p>
-        <div class="footer-social">
-          <a href="#" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" class="social-icon" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-          <a href="#" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-          <a href="#" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        </div>
       </div>
       <div class="footer-col">
         <h4>Quick Links</h4>

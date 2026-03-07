@@ -173,3 +173,33 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     }
   });
 });
+
+/* ── TESTIMONIAL AUTO-SCROLL ─────────────────────────────── */
+(function() {
+  const slider = document.getElementById('testimonial-slider');
+  if (!slider) return;
+  
+  let intervalId;
+  
+  const startScroll = () => {
+    intervalId = setInterval(() => {
+      // pause on hover
+      if (slider.matches(':hover')) return; 
+      
+      const card = slider.querySelector('.testimonial-card');
+      if (!card) return;
+      
+      const cardWidth = card.offsetWidth + 24; // 24px gap defined in CSS
+      
+      // If we reach the end, scroll back to 0
+      if (slider.scrollLeft >= (slider.scrollWidth - slider.clientWidth - 10)) {
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      }
+    }, 3500); // Scrolls every 3.5 seconds
+  };
+  
+  // start rolling after slight delay to allow AOS animations to finish
+  setTimeout(startScroll, 2000);
+})();
