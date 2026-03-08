@@ -14,7 +14,33 @@
   <style>
     .about-page-hero {
       background: linear-gradient(140deg, var(--bg-warm) 0%, var(--bg) 55%, #edf6ee 100%);
-      padding: 80px 0 60px
+      padding: 80px 0 60px;
+    }
+
+    /* Layout Stability (CLS) Fixes */
+    .doctor-img-wrap {
+      width: 100%;
+      max-width: 460px;
+      aspect-ratio: 460 / 550;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    .stats-row {
+      min-height: 160px;
+    }
+
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    .about-page-hero * {
+      animation: none !important;
+      transition: none !important;
+      transform: none !important;
+      opacity: 1 !important;
     }
   </style>
 </head>
@@ -54,12 +80,12 @@
         <div class="doctor-grid">
           <div class="doctor-img-wrap" data-aos="fade-right" style="text-align:center;">
             <img class="doctor-img" src="images/doctor.webp" alt="Vaidya Dolly - Ayurvedic Physician"
-              style="border-radius: 16px; object-fit: cover; max-width: 460px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); width: 100%; height: auto; margin: 0 auto;"
-              loading="eager" />
+              style="border-radius: 16px; object-fit: cover; max-width: 460px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); width: 100%; margin: 0 auto;"
+              width="460" height="550" loading="eager" />
           </div>
           <div class="doctor-info" data-aos="fade-left" data-aos-delay="120">
             <span class="badge">Your Trusted Vaidya</span>
-            <h1>Meet Vaidya Dolly Solanki Makwana</h1>
+            <h1>Meet <em style="color:var(--green-500);font-style:italic;">Vaidya Dolly Solanki Makwana</em></h1>
             <div class="doctor-credentials">
               <span class="credential">BAMS</span>
               <span class="credential">MD Panchakarma</span>
@@ -73,10 +99,7 @@
               preventive Ayurvedic care. She communicates fluently in English, Hindi, and Gujarati, making holistic
               healing accessible to a diverse global clientele.</p>
             <div class="doctor-countries">
-              <span class="country-pill">India</span><span class="country-pill">USA</span>
-              <span class="country-pill">Canada</span><span class="country-pill">UK</span>
-              <span class="country-pill">Australia</span><span class="country-pill">NZ</span>
-              <span class="country-pill">UAE</span><span class="country-pill">+2 more</span>
+
             </div>
             <div class="stats-row">
               <div class="stat-card">
@@ -90,6 +113,10 @@
               <div class="stat-card">
                 <div class="num">MD</div>
                 <div class="label">Panchakarma</div>
+              </div>
+              <div class="stat-card">
+                <div class="num" data-count="2000" data-suffix="+">2000+</div>
+                <div class="label">Successful Panchakarma Therapies</div>
               </div>
               <div class="stat-card">
                 <div class="num" data-count="5000" data-suffix="+">5000+</div>
@@ -108,9 +135,7 @@
           <div class="story-content" data-aos="fade-right">
             <span class="badge">Her Journey</span>
             <h2>A Calling Born from Compassion</h2>
-            <p>Vaidya Dolly's journey into Ayurveda began long before her formal education — seeded in childhood,
-              watching her grandmother prepare herbal kadhas and witnessing the quiet miracle of plants restoring
-              health. That innate connection to nature's pharmacy became the foundation of her life's purpose.</p>
+
             <div class="highlight-text">"Every patient who walks through my door carries a unique story. My role is not
               just to treat the symptom — but to understand the whole person: their mind, body, spirit, lifestyle, and
               the invisible stresses that tip their balance."</div>
@@ -166,7 +191,7 @@
           <div class="cred-card">
             <h3><span class="icon-box icon-box-sm"><i class="fas fa-hospital"></i></span> Clinical Experience</h3>
             <div class="cred-item">
-              <div class="cred-dot"></div><span><span class="highlight">8+ Years</span> of Active Clinical
+              <div class="cred-dot"></div><span><span class="highlight">9+ Years</span> of Active Clinical
                 Practice</span>
             </div>
             <div class="cred-item">
@@ -181,9 +206,7 @@
               <div class="cred-dot"></div><span><span class="highlight">Expert Training</span> under Senior Panchakarma
                 Specialists</span>
             </div>
-            <div class="cred-item">
-              <div class="cred-dot"></div><span>87% Success Rate in Fertility &amp; Reproductive Health Cases</span>
-            </div>
+
             <div class="cred-item">
               <div class="cred-dot"></div><span>International Tele-Consultation in 9+ Countries</span>
             </div>
@@ -202,7 +225,7 @@
         <div class="recognition-grid">
           <div class="recognition-card" data-aos="fade-up" data-aos-delay="0">
             <div class="recognition-icon icon-box icon-box-lg"><i class="fas fa-star"></i></div>
-            <h4>160+ Five-Star Reviews</h4>
+            <h4>170+ Five-Star Reviews</h4>
             <p>Consistently top-rated across Google and health platforms</p>
           </div>
           <div class="recognition-card" data-aos="fade-up" data-aos-delay="100">
@@ -281,34 +304,6 @@
       </div>
     </section>
 
-    <!-- ═══ SUCCESS METRICS ════════════════════════════════════ -->
-    <section class="stats-section section-pad" id="success-metrics">
-      <div class="container">
-        <div class="text-center" style="margin-bottom:44px" data-aos="fade-up">
-          <span class="badge" style="background:rgba(255,255,255,.15);color:#fff">By the Numbers</span>
-          <h2 style="color:#fff">Our Healing Journey in Numbers</h2>
-        </div>
-        <div class="stats-grid">
-          <div class="stat-card" data-aos="fade-up" data-aos-delay="0">
-            <div class="stat-num" data-count="5000" data-suffix="+">5000+</div>
-            <div class="stat-label">Patients Treated</div>
-          </div>
-          <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
-            <div class="stat-num" data-count="2000" data-suffix="+">2000+</div>
-            <div class="stat-label">Panchakarma Treatments</div>
-          </div>
-          <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
-            <div class="stat-num" data-count="95" data-suffix="%">95%</div>
-            <div class="stat-label">Patient Satisfaction Rate</div>
-          </div>
-          <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="stat-num" data-count="87" data-suffix="%">87%</div>
-            <div class="stat-label">Fertility Success Rate</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- ═══ CTA ════════════════════════════════════════════════ -->
     <section class="section-pad-sm" style="background:var(--bg);text-align:center" id="about-cta">
       <div class="container" data-aos="fade-up">
@@ -374,10 +369,7 @@
             <div class="footer-contact-text"><strong>Email</strong><a href="mailto:aksharamayurved@gmail.com"
                 style="color:#74c69d">aksharamayurved@gmail.com</a></div>
           </div>
-          <div class="footer-hours">
-            <p><strong>Mon – Sat:</strong> 9:00 AM – 7:00 PM</p>
-            <p><strong>Sunday:</strong> 10:00 AM – 2:00 PM</p>
-          </div>
+
         </div>
       </div>
       <div class="footer-bottom">
