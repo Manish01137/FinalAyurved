@@ -1,280 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact &amp; Book Consultation – Aksharam Ayurved, Ahmedabad</title>
-  <meta name="description" content="Schedule your online tele-consultation or in-clinic appointment with Vaidya Dolly Solanki Makwana at Aksharam Ayurved, Ahmedabad."/>
-  <link rel="stylesheet" href="css/styles.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta name="description"
+    content="Schedule your online tele-consultation or in-clinic appointment with Vaidya Dolly Solanki Makwana at Aksharam Ayurved, Ahmedabad." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
-    .contact-page-wrapper{background:var(--bg-warm);padding:80px 0}
-    .contact-social-row{display:flex;gap:10px;margin:20px 0 6px}
-    .contact-social-btn{width:42px;height:42px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.9rem;border:2px solid rgba(255,255,255,.25);color:rgba(255,255,255,.8);transition:var(--ease);background:rgba(255,255,255,.1)}
-    .contact-social-btn:hover{background:#fff;color:var(--green-700);border-color:#fff;transform:translateY(-2px)}
-    .contact-social-btn.wa:hover{background:#25d366;color:#fff;border-color:#25d366}
-    .map-section{background:var(--bg);padding:70px 0}
-    .divider{width:56px;height:4px;background:linear-gradient(90deg,var(--green-700),var(--green-300));border-radius:4px;margin:14px auto 0}
-    .contact-right-col{display:flex;flex-direction:column;gap:22px}
-    .quick-contact-card{background:var(--cream-bg);border-radius:var(--r-xl);padding:30px;color:var(--text-dark);box-shadow:0 8px 20px rgba(0,0,0,0.08)}
-    .quick-contact-card h3{color:var(--text-dark);margin-bottom:18px}
-    .quick-contact-item{display:flex;align-items:flex-start;gap:13px;margin-bottom:16px}
-    .quick-contact-icon{width:40px;height:40px;background:transparent;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;color:var(--gold-soft)}
-    .quick-contact-text{font-size:.88rem;color:var(--text-dark);line-height:1.55}
-    .quick-contact-text strong{display:block;color:var(--text-dark);margin-bottom:1px;font-size:.9rem}
-    .quick-contact-text a{color:var(--text-dark)}
-    .hours-card-contact{background:var(--bg-card);border-radius:var(--r-xl);padding:26px 30px;border:1px solid var(--border);box-shadow:var(--sh-sm)}
-    .hours-card-contact h3{color:var(--green-900);margin-bottom:18px;font-size:1.05rem;display:flex;align-items:center;gap:10px}
-    .hours-row{display:flex;justify-content:space-between;padding:9px 0;border-bottom:1px solid var(--border);font-size:.86rem}
-    .hours-row:last-child{border-bottom:none}
-    .hours-row .day{color:var(--text-muted)}
-    .hours-row .time{font-weight:600;color:var(--green-700)}
-    .form-card h2{color:var(--green-900);margin-bottom:5px;font-size:1.55rem}
-    .form-card>p{font-size:.88rem;color:var(--text-muted);margin-bottom:26px}
-    .tele-note{background:var(--green-50);border-radius:var(--r-md);padding:22px;border-left:4px solid var(--green-700)}
-    .tele-note h4{color:var(--green-900);margin-bottom:9px;font-size:1rem}
-    .tele-note p{font-size:.86rem;color:var(--green-900);line-height:1.72}
+    .contact-page-wrapper {
+      background: var(--bg-warm);
+      padding: 80px 0
+    }
+
+    .contact-social-row {
+      display: flex;
+      gap: 10px;
+      margin: 20px 0 6px
+    }
+
+    .contact-social-btn {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .9rem;
+      border: 2px solid rgba(255, 255, 255, .25);
+      color: rgba(255, 255, 255, .8);
+      transition: var(--ease);
+      background: rgba(255, 255, 255, .1)
+    }
+
+    .contact-social-btn:hover {
+      background: #fff;
+      color: var(--green-700);
+      border-color: #fff;
+      transform: translateY(-2px)
+    }
+
+    .contact-social-btn.wa:hover {
+      background: #25d366;
+      color: #fff;
+      border-color: #25d366
+    }
+
+    .map-section {
+      background: var(--bg);
+      padding: 70px 0
+    }
+
+    .divider {
+      width: 56px;
+      height: 4px;
+      background: linear-gradient(90deg, var(--green-700), var(--green-300));
+      border-radius: 4px;
+      margin: 14px auto 0
+    }
+
+    .contact-right-col {
+      display: flex;
+      flex-direction: column;
+      gap: 22px
+    }
+
+    .quick-contact-card {
+      background: var(--cream-bg);
+      border-radius: var(--r-xl);
+      padding: 30px;
+      color: var(--text-dark);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08)
+    }
+
+    .quick-contact-card h3 {
+      color: var(--text-dark);
+      margin-bottom: 18px
+    }
+
+    .quick-contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 13px;
+      margin-bottom: 16px
+    }
+
+    .quick-contact-icon {
+      width: 40px;
+      height: 40px;
+      background: transparent;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .9rem;
+      flex-shrink: 0;
+      color: var(--gold-soft)
+    }
+
+    .quick-contact-text {
+      font-size: .88rem;
+      color: var(--text-dark);
+      line-height: 1.55
+    }
+
+    .quick-contact-text strong {
+      display: block;
+      color: var(--text-dark);
+      margin-bottom: 1px;
+      font-size: .9rem
+    }
+
+    .quick-contact-text a {
+      color: var(--text-dark)
+    }
+
+    .hours-card-contact {
+      background: var(--bg-card);
+      border-radius: var(--r-xl);
+      padding: 26px 30px;
+      border: 1px solid var(--border);
+      box-shadow: var(--sh-sm)
+    }
+
+    .hours-card-contact h3 {
+      color: var(--green-900);
+      margin-bottom: 18px;
+      font-size: 1.05rem;
+      display: flex;
+      align-items: center;
+      gap: 10px
+    }
+
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 9px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: .86rem
+    }
+
+    .hours-row:last-child {
+      border-bottom: none
+    }
+
+    .hours-row .day {
+      color: var(--text-muted)
+    }
+
+    .hours-row .time {
+      font-weight: 600;
+      color: var(--green-700)
+    }
+
+    .form-card h2 {
+      color: var(--green-900);
+      margin-bottom: 5px;
+      font-size: 1.55rem
+    }
+
+    .form-card>p {
+      font-size: .88rem;
+      color: var(--text-muted);
+      margin-bottom: 26px
+    }
+
+    .tele-note {
+      background: var(--green-50);
+      border-radius: var(--r-md);
+      padding: 22px;
+      border-left: 4px solid var(--green-700)
+    }
+
+    .tele-note h4 {
+      color: var(--green-900);
+      margin-bottom: 9px;
+      font-size: 1rem
+    }
+
+    .tele-note p {
+      font-size: .86rem;
+      color: var(--green-900);
+      line-height: 1.72
+    }
   </style>
 </head>
+
 <body>
 
-<!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
-<header class="navbar" role="banner">
-  <div class="container navbar-inner">
-    <a href="index.html" class="navbar-logo" aria-label="Aksharam Ayurved Home">
-      <div class="logo-wrap">
-        <img src="images/logoBG.png" alt="Aksharam Ayurved Logo">
-        <div class="logo-text">
+  <!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Aksharam Ayurved Home">
+        <div class="logo-wrap">
+          <img src="images/logoBG.png" alt="Aksharam Ayurved Logo">
+          <div class="logo-text">
             <span class="brand-name">Aksharam Ayurved</span>
-            <span class="brand-sub">Panchakarma Hospital</span>
+
+          </div>
         </div>
+      </a>
+      <nav class="navbar-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="service.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="navbar-right">
+        <a href="contact.html" class="btn btn-premium navbar-book-btn">Book Appointment</a>
       </div>
-    </a>
-    <nav class="navbar-nav" role="navigation" aria-label="Main Navigation">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="service.html" class="nav-link">Services</a>
-      <a href="contact.html" class="nav-link">Contact Us</a>
-    </nav>
-    <div class="navbar-right">
-      <a href="contact.html" class="btn btn-premium navbar-book-btn">Book Appointment</a>
+      <button class="hamburger" aria-label="Toggle menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
-    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-</header>
+  </header>
 
-<main>
-<!-- ═══ HERO ══════════════════════════════════════════════ -->
-<section class="section-pad-sm" id="contact-hero" style="background:linear-gradient(140deg,var(--bg-warm),var(--bg));text-align:center">
-  <div class="container" data-aos="fade-up">
-    <span class="badge">We'd Love to Hear From You</span>
-    <h1 class="section-title">Schedule Your <span class="text-green">Online Consultation</span></h1>
-    <div class="divider"></div>
-    <p class="section-subtitle" style="margin-top:18px">
-      Whether you are in Ahmedabad or across the globe — healing begins with a single step. Book your personalised consultation with Vaidya Dolly Solanki Makwana today.
-    </p>
-  </div>
-</section>
+  <main>
+    <!-- ═══ HERO ══════════════════════════════════════════════ -->
+    <section class="section-pad-sm" id="contact-hero"
+      style="background:linear-gradient(140deg,var(--bg-warm),var(--bg));text-align:center">
+      <div class="container" data-aos="fade-up">
+        <span class="badge">We'd Love to Hear From You</span>
+        <h1 class="section-title">Schedule Your <span class="text-green">Online Consultation</span></h1>
+        <div class="divider"></div>
+        <p class="section-subtitle" style="margin-top:18px">
+          Whether you are in Ahmedabad or across the globe — healing begins with a single step. Book your personalised
+          consultation with Vaidya Dolly Solanki Makwana today.
+        </p>
+      </div>
+    </section>
 
-<!-- ═══ CONTACT FORM + INFO ════════════════════════════════ -->
-<section class="contact-page-wrapper" id="contact-form">
-  <div class="container">
-    <div class="contact-grid">
-      <!-- Form -->
-      <div class="form-card" data-aos="fade-right">
-        <h2>Book an Appointment</h2>
-        <p>Fill in your details below and our team will reach out to confirm your slot within 24 hours.</p>
-        <form id="contact-form-main" novalidate>
-          <div class="form-group">
-            <label for="cf-name">Full Name *</label>
-            <input type="text" id="cf-name" class="form-control" placeholder="Enter your full name" required/>
+    <!-- ═══ CONTACT FORM + INFO ════════════════════════════════ -->
+    <section class="contact-page-wrapper" id="contact-form">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Form -->
+          <div class="form-card" data-aos="fade-right">
+            <h2>Book an Appointment</h2>
+            <p>Fill in your details below and our team will reach out to confirm your slot within 24 hours.</p>
+            <form id="contact-form-main" novalidate>
+              <div class="form-group">
+                <label for="cf-name">Full Name *</label>
+                <input type="text" id="cf-name" class="form-control" placeholder="Enter your full name" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-email">Email Address *</label>
+                <input type="email" id="cf-email" class="form-control" placeholder="your@email.com" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-phone">Contact Number *</label>
+                <input type="tel" id="cf-phone" class="form-control" placeholder="+91 XXXXX XXXXX" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-service">Service of Interest</label>
+                <select id="cf-service" class="form-control">
+                  <option value="" disabled selected>Select a treatment or program…</option>
+                  <option>Panchakarma Program</option>
+                  <option>Beej Shuddhi &amp; Fertility</option>
+                  <option>Sharadiya Virechan</option>
+                  <option>Vasantik Vaman</option>
+                  <option>Monsoon Nourishment</option>
+                  <option>Kati Basti / Joint Therapy</option>
+                  <option>Shiro Abhyanga</option>
+                  <option>Tele-Consultation</option>
+                  <option>General Wellness Consultation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cf-message">Additional Information</label>
+                <textarea id="cf-message" class="form-control"
+                  placeholder="Briefly describe your health concern, current medications, or any questions…"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="checkbox-group">
+                  <input type="checkbox" id="cf-terms" required />
+                  <label for="cf-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy
+                      Policy</a>, and consent to be contacted by Aksharam Ayurved.</label>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit" id="contact-form-submit">
+                <i class="fas fa-paper-plane"></i> Submit Appointment Request
+              </button>
+            </form>
           </div>
-          <div class="form-group">
-            <label for="cf-email">Email Address *</label>
-            <input type="email" id="cf-email" class="form-control" placeholder="your@email.com" required/>
-          </div>
-          <div class="form-group">
-            <label for="cf-phone">Contact Number *</label>
-            <input type="tel" id="cf-phone" class="form-control" placeholder="+91 XXXXX XXXXX" required/>
-          </div>
-          <div class="form-group">
-            <label for="cf-service">Service of Interest</label>
-            <select id="cf-service" class="form-control">
-              <option value="" disabled selected>Select a treatment or program…</option>
-              <option>Panchakarma Program</option>
-              <option>Beej Shuddhi &amp; Fertility</option>
-              <option>Sharadiya Virechan</option>
-              <option>Vasantik Vaman</option>
-              <option>Monsoon Nourishment</option>
-              <option>Kati Basti / Joint Therapy</option>
-              <option>Shiro Abhyanga</option>
-              <option>Tele-Consultation</option>
-              <option>General Wellness Consultation</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="cf-message">Additional Information</label>
-            <textarea id="cf-message" class="form-control" placeholder="Briefly describe your health concern, current medications, or any questions…"></textarea>
-          </div>
-          <div class="form-group">
-            <div class="checkbox-group">
-              <input type="checkbox" id="cf-terms" required/>
-              <label for="cf-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>, and consent to be contacted by Aksharam Ayurved.</label>
+
+          <!-- Info -->
+          <div class="contact-right-col" data-aos="fade-left" data-aos-delay="150">
+            <!-- Quick Contact -->
+            <div class="quick-contact-card">
+              <h3>Contact Details</h3>
+              <div class="quick-contact-item">
+                <div class="quick-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                <div class="quick-contact-text"><strong>Clinic Address</strong>Asarwa, Ahmedabad, Gujarat, India</div>
+              </div>
+              <div class="quick-contact-item">
+                <div class="quick-contact-icon"><i class="fas fa-envelope"></i></div>
+                <div class="quick-contact-text"><strong>Email</strong><a
+                    href="mailto:aksharamayurved@gmail.com">aksharamayurved@gmail.com</a></div>
+              </div>
+              <div class="quick-contact-item">
+                <div class="quick-contact-icon"><i class="fas fa-phone"></i></div>
+                <div class="quick-contact-text"><strong>Phone</strong>+91-9499-561-561</div>
+              </div>
+              <div class="quick-contact-item">
+                <div class="quick-contact-icon"><i class="fab fa-whatsapp"></i></div>
+                <div class="quick-contact-text"><strong>WhatsApp</strong><a href="https://wa.me/919499561561"
+                    target="_blank" rel="noopener">+91-9499561561</a></div>
+              </div>
+            </div>
+
+            <!-- Working Hours -->
+            <div class="hours-card-contact">
+              <h3><i class="fas fa-clock" style="color:var(--green-700)"></i> Working Hours</h3>
+              <div class="hours-row"><span class="day">Monday</span><span class="time">9:00 AM – 7:00 PM</span></div>
+              <div class="hours-row"><span class="day">Tuesday</span><span class="time">9:00 AM – 7:00 PM</span></div>
+              <div class="hours-row"><span class="day">Wednesday</span><span class="time">9:00 AM – 7:00 PM</span></div>
+              <div class="hours-row"><span class="day">Thursday</span><span class="time">9:00 AM – 7:00 PM</span></div>
+              <div class="hours-row"><span class="day">Friday</span><span class="time">9:00 AM – 7:00 PM</span></div>
+              <div class="hours-row"><span class="day">Saturday</span><span class="time">9:00 AM – 7:00 PM</span></div>
+              <div class="hours-row"><span class="day">Sunday</span><span class="time">10:00 AM – 2:00 PM</span></div>
+            </div>
+
+            <!-- Tele note -->
+            <div class="tele-note">
+              <h4><i class="fas fa-video" style="color:var(--green-700);margin-right:8px"></i>Tele-Consultation
+                Available</h4>
+              <p>Can't visit in person? We offer comprehensive online consultations for patients across India and
+                internationally. Same expert care — from your home.</p>
+              <a href="https://wa.me/919499561561" class="btn btn-whatsapp"
+                style="margin-top:14px;padding:10px 20px;font-size:.86rem" target="_blank" rel="noopener"
+                id="tele-wa-btn">
+                <i class="fab fa-whatsapp"></i> Book via WhatsApp
+              </a>
             </div>
           </div>
-          <button type="submit" class="btn btn-primary form-submit" id="contact-form-submit">
-            <i class="fas fa-paper-plane"></i> Submit Appointment Request
-          </button>
-        </form>
-      </div>
-
-      <!-- Info -->
-      <div class="contact-right-col" data-aos="fade-left" data-aos-delay="150">
-        <!-- Quick Contact -->
-        <div class="quick-contact-card">
-          <h3>Contact Details</h3>
-          <div class="quick-contact-item">
-            <div class="quick-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
-            <div class="quick-contact-text"><strong>Clinic Address</strong>Asarwa, Ahmedabad, Gujarat, India</div>
-          </div>
-          <div class="quick-contact-item">
-            <div class="quick-contact-icon"><i class="fas fa-envelope"></i></div>
-            <div class="quick-contact-text"><strong>Email</strong><a href="mailto:aksharamayurved@gmail.com">aksharamayurved@gmail.com</a></div>
-          </div>
-          <div class="quick-contact-item">
-            <div class="quick-contact-icon"><i class="fas fa-phone"></i></div>
-            <div class="quick-contact-text"><strong>Phone</strong>+91-9499-561-561</div>
-          </div>
-          <div class="quick-contact-item">
-            <div class="quick-contact-icon"><i class="fab fa-whatsapp"></i></div>
-            <div class="quick-contact-text"><strong>WhatsApp</strong><a href="https://wa.me/919499561561" target="_blank" rel="noopener">+91-9499561561</a></div>
-          </div>
-        </div>
-
-        <!-- Working Hours -->
-        <div class="hours-card-contact">
-          <h3><i class="fas fa-clock" style="color:var(--green-700)"></i> Working Hours</h3>
-          <div class="hours-row"><span class="day">Monday</span><span class="time">9:00 AM – 7:00 PM</span></div>
-          <div class="hours-row"><span class="day">Tuesday</span><span class="time">9:00 AM – 7:00 PM</span></div>
-          <div class="hours-row"><span class="day">Wednesday</span><span class="time">9:00 AM – 7:00 PM</span></div>
-          <div class="hours-row"><span class="day">Thursday</span><span class="time">9:00 AM – 7:00 PM</span></div>
-          <div class="hours-row"><span class="day">Friday</span><span class="time">9:00 AM – 7:00 PM</span></div>
-          <div class="hours-row"><span class="day">Saturday</span><span class="time">9:00 AM – 7:00 PM</span></div>
-          <div class="hours-row"><span class="day">Sunday</span><span class="time">10:00 AM – 2:00 PM</span></div>
-        </div>
-
-        <!-- Tele note -->
-        <div class="tele-note">
-          <h4><i class="fas fa-video" style="color:var(--green-700);margin-right:8px"></i>Tele-Consultation Available</h4>
-          <p>Can't visit in person? We offer comprehensive online consultations for patients across India and internationally. Same expert care — from your home.</p>
-          <a href="https://wa.me/919499561561" class="btn btn-whatsapp" style="margin-top:14px;padding:10px 20px;font-size:.86rem" target="_blank" rel="noopener" id="tele-wa-btn">
-            <i class="fab fa-whatsapp"></i> Book via WhatsApp
-          </a>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- ═══ MAP ════════════════════════════════════════════════ -->
-<section class="map-section" id="map">
-  <div class="container">
-    <div class="text-center" data-aos="fade-up" style="margin-bottom:36px">
-      <span class="badge">Find Us</span>
-      <h2 class="section-title">Visit Our <span class="text-green">Clinic</span></h2>
-      <p class="section-subtitle">Located in Asarwa, Ahmedabad — easily accessible from all parts of the city.</p>
-    </div>
-    <div class="map-container" data-aos="fade-up" data-aos-delay="100">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14684.234567890!2d72.604563!3d23.044576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84e8b1111111%3A0x111111111111!2sAsarwa%2C+Ahmedabad%2C+Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Aksharam Ayurved Location – Asarwa, Ahmedabad">
-      </iframe>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ FAQ ════════════════════════════════════════════════ -->
-<section class="faq-section section-pad" id="contact-faq" style="background:var(--bg-warm)">
-  <div class="container">
-    <div class="text-center" data-aos="fade-up">
-      <span class="badge">Quick Answers</span>
-      <h2 class="section-title">Consultation <span class="text-green">FAQs</span></h2>
-    </div>
-    <div class="faq-wrap" data-aos="fade-up" data-aos-delay="100">
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">How do I book a tele-consultation if I'm outside India?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
-        <div class="faq-answer"><p>International patients can book through this form or via WhatsApp (+91-9499561561). Our team will share available slots in your time zone, a video link, and a pre-consultation health questionnaire.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">What should I prepare for my first consultation?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
-        <div class="faq-answer"><p>Please prepare a brief summary of your health history, current symptoms, any recent lab reports or prescriptions, and a list of current medications. For tele-consultations, ensure good lighting so Vaidya Dolly can observe your face, tongue, and eyes for Ayurvedic diagnosis.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">How long is a typical consultation session?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
-        <div class="faq-answer"><p>First consultations typically last 45–60 minutes for thorough case-taking and Prakriti assessment. Follow-up sessions are 20–30 minutes. Vaidya Dolly never rushes through your journey.</p></div>
-      </div>
-      <div class="faq-item">
-        <button class="faq-question" aria-expanded="false">Can I consult for a family member or child?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
-        <div class="faq-answer"><p>Absolutely. We treat patients of all ages including infants, children, and elderly. For children's consultations, a parent or guardian must be present. Simply mention in the form that the consultation is for a family member.</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-</main>
-
-<!-- ═══ FOOTER ═════════════════════════════════════════════ -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <div class="footer-logo">
-          <img src="images/logoBG.png" alt="Aksharam Ayurved Panchakarma Hospital Logo" style="height: 60px; margin-bottom: 15px; width: auto; object-fit: contain;">
+    <!-- ═══ MAP ════════════════════════════════════════════════ -->
+    <section class="map-section" id="map">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up" style="margin-bottom:36px">
+          <span class="badge">Find Us</span>
+          <h2 class="section-title">Visit Our <span class="text-green">Clinic</span></h2>
+          <p class="section-subtitle">Located in Asarwa, Ahmedabad — easily accessible from all parts of the city.</p>
         </div>
-        <p class="footer-desc">Authentic Panchakarma and Ayurvedic hospital dedicated to holistic healing of body, mind, and soul.</p>
+        <div class="map-container" data-aos="fade-up" data-aos-delay="100">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14684.234567890!2d72.604563!3d23.044576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e84e8b1111111%3A0x111111111111!2sAsarwa%2C+Ahmedabad%2C+Gujarat!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            title="Aksharam Ayurved Location – Asarwa, Ahmedabad">
+          </iframe>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About Aksharam</a></li>
-          <li><a href="service.html">Panchakarma Programs</a></li>
-          <li><a href="index.html#testimonials">Patient Stories</a></li>
-          <li><a href="contact.html">Tele-Consultations</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Our Services</h4>
-        <ul>
-          <li><a href="service.html">Sharadiya Virechan</a></li>
-          <li><a href="service.html">Vasantik Vaman</a></li>
-          <li><a href="service.html">Panchakarma Therapies</a></li>
-          <li><a href="contact.html">Tele Consultation</a></li>
-          <li><a href="service.html">Diet &amp; Lifestyle Guidance</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact Information</h4>
-        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="footer-contact-text"><strong>Address</strong>Asarwa, Ahmedabad, Gujarat, India</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fas fa-phone"></i></div><div class="footer-contact-text"><strong>Phone</strong>+91-9499-561-561</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div><div class="footer-contact-text"><strong>WhatsApp</strong>+91-9499561561</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fas fa-envelope"></i></div><div class="footer-contact-text"><strong>Email</strong><a href="mailto:aksharamayurved@gmail.com" style="color:#74c69d">aksharamayurved@gmail.com</a></div></div>
-        <div class="footer-hours"><p><strong>Mon – Sat:</strong> 9:00 AM – 7:00 PM</p><p><strong>Sunday:</strong> 10:00 AM – 2:00 PM</p></div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2024 Aksharam Ayurved. All rights reserved.</p>
-      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Disclaimer</a></div>
-    </div>
-  </div>
-</footer>
+    </section>
 
-<a href="https://wa.me/919499561561" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-<script src="js/main.js"></script>
+    <!-- ═══ FAQ ════════════════════════════════════════════════ -->
+    <section class="faq-section section-pad" id="contact-faq" style="background:var(--bg-warm)">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge">Quick Answers</span>
+          <h2 class="section-title">Consultation <span class="text-green">FAQs</span></h2>
+        </div>
+        <div class="faq-wrap" data-aos="fade-up" data-aos-delay="100">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How do I book a tele-consultation if I'm outside
+              India?<span class="faq-icon"><i class="fas fa-plus"></i></span></button>
+            <div class="faq-answer">
+              <p>International patients can book through this form or via WhatsApp (+91-9499561561). Our team will share
+                available slots in your time zone, a video link, and a pre-consultation health questionnaire.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">What should I prepare for my first consultation?<span
+                class="faq-icon"><i class="fas fa-plus"></i></span></button>
+            <div class="faq-answer">
+              <p>Please prepare a brief summary of your health history, current symptoms, any recent lab reports or
+                prescriptions, and a list of current medications. For tele-consultations, ensure good lighting so Vaidya
+                Dolly can observe your face, tongue, and eyes for Ayurvedic diagnosis.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">How long is a typical consultation session?<span
+                class="faq-icon"><i class="fas fa-plus"></i></span></button>
+            <div class="faq-answer">
+              <p>First consultations typically last 45–60 minutes for thorough case-taking and Prakriti assessment.
+                Follow-up sessions are 20–30 minutes. Vaidya Dolly never rushes through your journey.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">Can I consult for a family member or child?<span
+                class="faq-icon"><i class="fas fa-plus"></i></span></button>
+            <div class="faq-answer">
+              <p>Absolutely. We treat patients of all ages including infants, children, and elderly. For children's
+                consultations, a parent or guardian must be present. Simply mention in the form that the consultation is
+                for a family member.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logoBG.png" alt="Aksharam Ayurved Panchakarma Hospital Logo"
+              style="height: 60px; margin-bottom: 15px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-desc">Authentic Panchakarma and Ayurvedic hospital dedicated to holistic healing of body,
+            mind, and soul.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Aksharam</a></li>
+            <li><a href="service.html">Panchakarma Programs</a></li>
+            <li><a href="index.html#testimonials">Patient Stories</a></li>
+            <li><a href="contact.html">Tele-Consultations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="service.html">Sharadiya Virechan</a></li>
+            <li><a href="service.html">Vasantik Vaman</a></li>
+            <li><a href="service.html">Panchakarma Therapies</a></li>
+            <li><a href="contact.html">Tele Consultation</a></li>
+            <li><a href="service.html">Diet &amp; Lifestyle Guidance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="footer-contact-text"><strong>Address</strong>Asarwa, Ahmedabad, Gujarat, India</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="footer-contact-text"><strong>Phone</strong>+91-9499-561-561</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="footer-contact-text"><strong>WhatsApp</strong>+91-9499561561</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="footer-contact-text"><strong>Email</strong><a href="mailto:aksharamayurved@gmail.com"
+                style="color:#74c69d">aksharamayurved@gmail.com</a></div>
+          </div>
+          <div class="footer-hours">
+            <p><strong>Mon – Sat:</strong> 9:00 AM – 7:00 PM</p>
+            <p><strong>Sunday:</strong> 10:00 AM – 2:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Aksharam Ayurved. All rights reserved.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a
+            href="#">Disclaimer</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/919499561561" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank"
+    rel="noopener"><i class="fab fa-whatsapp"></i></a>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
