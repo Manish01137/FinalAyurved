@@ -6,6 +6,18 @@
 
 /* ── TOKENS ──────────────────────────────────────────────── */
 :root {
+  --cream-bg: #FAF7F2;
+  --beige-bg: #F5F0E6;
+  --sand-bg: #EDE7DD;
+
+  --gold-soft: #C6A96A;
+  --gold-light: #E6C78B;
+
+  --emerald-dark: #1B4332;
+  --emerald-footer: #173F2F;
+
+  --text-dark: #2B2B2B;
+
   --green-900: #1b4332;
   --green-700: #2d6a4f;
   --green-500: #40916c;
@@ -14,10 +26,11 @@
   --green-50:  #d8f3dc;
   --gold-600:  #c9a94b;
   --gold-400:  #e9c46a;
-  --bg:        #faf7f2;
-  --bg-warm:   #f3f6f4;
+  --bg:        var(--cream-bg);
+  --bg-warm:   var(--beige-bg);
+  --bg-sand:   var(--sand-bg);
   --bg-card:   #ffffff;
-  --text:      #1e2a22;
+  --text:      var(--text-dark);
   --text-muted:#6b7c74;
   --text-light:#9aab9f;
   --border:    #e4ddd0;
@@ -105,7 +118,7 @@ p{color:var(--text-muted);font-size:18px;line-height:1.8}
 
 .badge{
   display:inline-block;
-  background:var(--green-100);color:var(--green-900);
+  background:var(--gold-soft);color:#fff;
   padding:5px 18px;border-radius:50px;
   font-size:.78rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;
   margin-bottom:14px;
@@ -118,13 +131,13 @@ p{color:var(--text-muted);font-size:18px;line-height:1.8}
 .icon-box{
   width:52px;height:52px;border-radius:14px;flex-shrink:0;
   display:flex;align-items:center;justify-content:center;
-  background:linear-gradient(135deg,var(--green-100),var(--green-50));
-  color:var(--green-700);font-size:20px;
+  background:var(--beige-bg);
+  color:var(--gold-soft);font-size:20px;
   border:1px solid var(--border);
 }
 .icon-box-sm{width:40px;height:40px;border-radius:10px;font-size:16px}
 .icon-box-lg{width:64px;height:64px;border-radius:18px;font-size:24px}
-.recognition-icon .icon-box{background:linear-gradient(135deg,var(--green-100),#fff)}
+.recognition-icon .icon-box{background:var(--cream-bg)}
 
 /* ── BUTTONS ─────────────────────────────────────────────── */
 .btn{
@@ -142,17 +155,17 @@ p{color:var(--text-muted);font-size:18px;line-height:1.8}
   transform:translateY(-2px);box-shadow:0 12px 32px rgba(45,106,79,.42);
 }
 .btn-outline{
-  background:transparent;color:var(--green-700);border:2px solid var(--green-700);
+  background:transparent;color:var(--gold-soft);border:2px solid var(--gold-soft);
 }
 .btn-outline:hover{
-  background:linear-gradient(135deg,var(--green-500),var(--green-300));
-  border-color:transparent;color:#fff;transform:translateY(-2px);box-shadow:0 12px 32px rgba(45,106,79,.32);
+  background:var(--gold-soft);
+  border-color:transparent;color:#fff;transform:translateY(-2px);box-shadow:0 12px 32px rgba(198,169,106,.32);
 }
 .btn-gold{
-  background:linear-gradient(135deg,var(--gold-600),var(--gold-400));
-  color:var(--green-900);box-shadow:0 6px 22px rgba(201,169,75,.28);
+  background:var(--gold-soft);
+  color:var(--text-dark);box-shadow:0 6px 22px rgba(201,169,75,.28);
 }
-.btn-gold:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(201,169,75,.38)}
+.btn-gold:hover{background:var(--gold-light);transform:translateY(-2px);box-shadow:0 12px 32px rgba(201,169,75,.38)}
 .btn-whatsapp{background:#25d366;color:#fff;box-shadow:0 6px 22px rgba(37,211,102,.28)}
 .btn-whatsapp:hover{background:#1da851;transform:translateY(-2px)}
 .btn i,.btn svg{font-size:15px}
@@ -217,7 +230,7 @@ p{color:var(--text-muted);font-size:18px;line-height:1.8}
 .hamburger span{width:24px;height:2px;background:var(--text);border-radius:2px;transition:var(--ease)}
 
 /* ── FOOTER ──────────────────────────────────────────────── */
-.footer{background:var(--green-900);color:#c8e6d6;padding:68px 0 0}
+.footer{background:var(--emerald-footer);color:#c8e6d6;padding:68px 0 0}
 .footer-grid{
   display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;
   gap:44px;padding-bottom:52px;
@@ -232,7 +245,7 @@ p{color:var(--text-muted);font-size:18px;line-height:1.8}
 .footer-col h4{font-family:var(--font-h);font-size:1.1rem;color:#fff;margin-bottom:18px}
 .footer-col ul li{margin-bottom:9px}
 .footer-col ul li a{font-size:.88rem;color:#96bfa8;display:flex;align-items:center;gap:8px;transition:var(--ease)}
-.footer-col ul li a:hover{color:var(--green-300);transform:translateX(4px)}
+.footer-col ul li a:hover{color:var(--gold-soft);transform:translateX(4px)}
 .footer-col ul li a::before{content:'›';font-size:1rem;opacity:.55}
 .footer-contact-item{display:flex;gap:10px;margin-bottom:13px;align-items:flex-start}
 .footer-contact-icon{
@@ -251,7 +264,7 @@ p{color:var(--text-muted);font-size:18px;line-height:1.8}
 }
 .footer-bottom-links{display:flex;gap:18px}
 .footer-bottom-links a{color:#5a8a70;transition:color .3s}
-.footer-bottom-links a:hover{color:var(--green-300)}
+.footer-bottom-links a:hover{color:var(--gold-soft)}
 
 /* ── HERO ────────────────────────────────────────────────── */
 .hero{
@@ -488,11 +501,11 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 .recognition-card h4{color:var(--green-900);margin-bottom:7px;font-size:.97rem}
 .recognition-card p{font-size:.8rem;color:var(--text-light)}
 
-.philosophy-section{background:linear-gradient(135deg,var(--green-900),var(--green-700));text-align:center;padding:96px 0}
-.philosophy-quote{font-family:var(--font-h);font-size:clamp(1.35rem,2.8vw,1.95rem);font-style:italic;color:#fff;max-width:820px;margin:0 auto;line-height:1.65}
-.philosophy-quote::before{content:'\201C';font-size:3.5rem;color:var(--green-300);line-height:0;vertical-align:-.45em;margin-right:6px}
-.philosophy-quote::after{content:'\201D';font-size:3.5rem;color:var(--green-300);line-height:0;vertical-align:-.45em;margin-left:6px}
-.philosophy-author{margin-top:22px;color:var(--green-100);font-size:.88rem}
+.philosophy-section{background:var(--cream-bg);text-align:center;padding:96px 0}
+.philosophy-quote{font-family:var(--font-h);font-size:clamp(1.35rem,2.8vw,1.95rem);font-style:italic;color:var(--text-dark);max-width:820px;margin:0 auto;line-height:1.65}
+.philosophy-quote::before{content:'\201C';font-size:3.5rem;color:var(--gold-soft);line-height:0;vertical-align:-.45em;margin-right:6px}
+.philosophy-quote::after{content:'\201D';font-size:3.5rem;color:var(--gold-soft);line-height:0;vertical-align:-.45em;margin-left:6px}
+.philosophy-author{margin-top:22px;color:var(--gold-soft);font-size:.88rem}
 
 .spec-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
 .spec-card{background:var(--bg-card);border-radius:var(--r-md);padding:22px 16px;text-align:center;border:1px solid var(--border);box-shadow:var(--sh-sm);transition:var(--ease);display:flex;flex-direction:column;align-items:center;gap:12px}
@@ -536,17 +549,17 @@ select.form-control{appearance:none;background-image:url("data:image/svg+xml,%3C
 }
 .separator-banner::before{
   content:'';position:absolute;inset:0;
-  background:linear-gradient(135deg, rgba(27,67,50,0.85), rgba(45,106,79,0.7));
+  background:rgba(250,247,242,0.85);
   z-index:1;
 }
 .separator-banner .container{position:relative;z-index:2}
-.separator-banner h2{color:#fff;font-size:clamp(32px, 4vw, 48px);font-style:italic;margin-bottom:16px}
-.separator-banner p{color:var(--green-50);font-size:20px;max-width:600px;margin:0 auto}
+.separator-banner h2{color:var(--text-dark);font-size:clamp(32px, 4vw, 48px);font-style:italic;margin-bottom:16px}
+.separator-banner p{color:#3A2F2A;font-size:20px;max-width:600px;margin:0 auto}
 
 /* ── SERVICES PAGE ───────────────────────────────────────── */
-.services-hero{padding:90px 0 70px;background:linear-gradient(140deg,var(--green-900) 0%,var(--green-700) 100%);color:#fff;text-align:center}
-.services-hero h1{color:#fff;margin-bottom:14px}
-.services-hero p{color:rgba(255,255,255,.8);max-width:580px;margin:0 auto 32px;font-size:1rem}
+.services-hero{padding:90px 0 70px;background:var(--cream-bg);text-align:center}
+.services-hero h1{color:#2B2B2B;margin-bottom:14px}
+.services-hero p{color:#3A2F2A;max-width:580px;margin:0 auto 32px;font-size:1rem}
 .services-hero-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
 .treatment-grid-8{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 .treatment-card-sm{background:var(--bg-card);border-radius:var(--r-lg);overflow:hidden;box-shadow:var(--sh-sm);border:1px solid var(--border);transition:var(--ease);display:flex;flex-direction:column}
