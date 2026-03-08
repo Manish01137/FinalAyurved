@@ -1,360 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services – Ayurvedic Treatments | Aksharam Ayurved, Ahmedabad</title>
-  <meta name="description" content="Explore Kati Basti, Shirodhara, Panchakarma, Vasantik Vaman, Sharadiya Virechan and more at Aksharam Ayurved, Ahmedabad."/>
-  <link rel="stylesheet" href="css/styles.css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <meta name="description"
+    content="Explore Kati Basti, Shirodhara, Panchakarma, Vasantik Vaman, Sharadiya Virechan and more at Aksharam Ayurved, Ahmedabad." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     /* Approach strip */
-    .approach-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-    .approach-card{background:var(--bg-card);border-radius:var(--r-md);padding:26px 18px;text-align:center;border:1px solid var(--border);transition:var(--ease);display:flex;flex-direction:column;align-items:center;gap:12px}
-    .approach-card:hover{transform:translateY(-5px);border-color:var(--green-300);box-shadow:var(--sh-md)}
-    .approach-card h4{color:var(--green-900);font-size:.95rem}
-    .approach-card p{font-size:.82rem;color:var(--text-muted)}
+    .approach-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px
+    }
+
+    .approach-card {
+      background: var(--bg-card);
+      border-radius: var(--r-md);
+      padding: 26px 18px;
+      text-align: center;
+      border: 1px solid var(--border);
+      transition: var(--ease);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 12px
+    }
+
+    .approach-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--green-300);
+      box-shadow: var(--sh-md)
+    }
+
+    .approach-card h4 {
+      color: var(--green-900);
+      font-size: .95rem
+    }
+
+    .approach-card p {
+      font-size: .82rem;
+      color: var(--text-muted)
+    }
+
     /* Program cards now in styles.css */
     /* CTA strip */
-    .cta-strip{background:var(--beige-bg);padding:76px 0;text-align:center}
-    .cta-strip h2{color:var(--text-dark);margin-bottom:10px}
-    .cta-strip p{color:var(--text-dark);max-width:540px;margin:0 auto 28px;font-size:.97rem}
-    @media(max-width:900px){.special-programs-grid{grid-template-columns:1fr 1fr}.approach-grid{grid-template-columns:1fr 1fr}}
-    @media(max-width:600px){.special-programs-grid{grid-template-columns:1fr}}
+    .cta-strip {
+      background: var(--beige-bg);
+      padding: 76px 0;
+      text-align: center
+    }
+
+    .cta-strip h2 {
+      color: var(--text-dark);
+      margin-bottom: 10px
+    }
+
+    .cta-strip p {
+      color: var(--text-dark);
+      max-width: 540px;
+      margin: 0 auto 28px;
+      font-size: .97rem
+    }
+
+    @media(max-width:900px) {
+      .special-programs-grid {
+        grid-template-columns: 1fr 1fr
+      }
+
+      .approach-grid {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    @media(max-width:600px) {
+      .special-programs-grid {
+        grid-template-columns: 1fr
+      }
+    }
   </style>
 </head>
+
 <body>
 
-<!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
-<header class="navbar" role="banner">
-  <div class="container navbar-inner">
-    <a href="index.html" class="navbar-logo" aria-label="Aksharam Ayurved Home">
-      <div class="logo-wrap">
-        <img src="images/logoBG.png" alt="Aksharam Ayurved Logo">
-        <div class="logo-text">
+  <!-- ═══ NAVBAR ═══════════════════════════════════════════ -->
+  <header class="navbar" role="banner">
+    <div class="container navbar-inner">
+      <a href="index.html" class="navbar-logo" aria-label="Aksharam Ayurved Home">
+        <div class="logo-wrap">
+          <img src="images/logoBG.png" alt="Aksharam Ayurved Logo">
+          <div class="logo-text">
             <span class="brand-name">Aksharam Ayurved</span>
-            <span class="brand-sub">Panchakarma Hospital</span>
+
+          </div>
         </div>
+      </a>
+      <nav class="navbar-nav" role="navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="service.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+      </nav>
+      <div class="navbar-right">
+        <a href="contact.html" class="btn btn-premium navbar-book-btn">Book Appointment</a>
       </div>
-    </a>
-    <nav class="navbar-nav" role="navigation" aria-label="Main Navigation">
-      <a href="index.html" class="nav-link">Home</a>
-      <a href="about.html" class="nav-link">About</a>
-      <a href="service.html" class="nav-link">Services</a>
-      <a href="contact.html" class="nav-link">Contact Us</a>
-    </nav>
-    <div class="navbar-right">
-      <a href="contact.html" class="btn btn-premium navbar-book-btn">Book Appointment</a>
+      <button class="hamburger" aria-label="Toggle menu"
+        aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
-    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
-  </div>
-</header>
+  </header>
 
-<main>
-<!-- ═══ HERO ══════════════════════════════════════════════ -->
-<section class="services-hero" id="services-hero">
-  <div class="container">
-    <div data-aos="fade-up">
-      <span class="badge" style="background:rgba(255,255,255,.18);color:#fff">Aksharam Ayurved, Ahmedabad</span>
-      <h1>We Provide the <em style="font-style:italic;color:var(--gold-soft)">Best Ayurveda</em> Treatment</h1>
-      <p>Experience authentic, physician-guided Ayurvedic therapies rooted in classical texts and personalised to your unique constitution. Healing that goes beyond symptoms — addressing the root.</p>
-      <div class="services-hero-btns" data-aos="fade-up" data-aos-delay="150">
-        <a href="contact.html" class="btn btn-gold" id="services-book-btn"><i class="fas fa-calendar-check"></i> Book Your Slot</a>
-        <a href="https://wa.me/918530422103" class="btn btn-whatsapp" target="_blank" rel="noopener" id="services-wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+  <main>
+    <!-- ═══ HERO ══════════════════════════════════════════════ -->
+    <section class="services-hero" id="services-hero">
+      <div class="container">
+        <div data-aos="fade-up">
+          <span class="badge" style="background:rgba(255,255,255,.18);color:#fff">Aksharam Ayurved, Ahmedabad</span>
+          <h1>We Provide the <em style="font-style:italic;color:var(--gold-soft)">Best Ayurveda</em> Treatment</h1>
+          <p>Experience authentic, physician-guided Ayurvedic therapies rooted in classical texts and personalised to
+            your unique constitution. Healing that goes beyond symptoms — addressing the root.</p>
+          <div class="services-hero-btns" data-aos="fade-up" data-aos-delay="150">
+            <a href="contact.html" class="btn btn-gold" id="services-book-btn"><i class="fas fa-calendar-check"></i>
+              Book Your Slot</a>
+            <a href="https://wa.me/919499561561" class="btn btn-whatsapp" target="_blank" rel="noopener"
+              id="services-wa-btn"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ APPROACH ═══════════════════════════════════════════ -->
+    <section class="section-pad-sm" style="background:var(--bg-warm)" id="approach">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge">Our Method</span>
+          <h2 class="section-title">The Aksharam Healing <span class="text-green">Approach</span></h2>
+        </div>
+        <div class="approach-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="approach-card">
+            <div class="icon-box"><i class="fas fa-magnifying-glass"></i></div>
+            <h4>Prakriti Assessment</h4>
+            <p>Detailed analysis of your unique body constitution, dosha balance, and health history</p>
+          </div>
+          <div class="approach-card">
+            <div class="icon-box"><i class="fas fa-clipboard-list"></i></div>
+            <h4>Personalised Protocol</h4>
+            <p>Custom treatment plan combining the right therapies, herbs, diet, and lifestyle guidance</p>
+          </div>
+          <div class="approach-card">
+            <div class="icon-box"><i class="fas fa-leaf"></i></div>
+            <h4>Authentic Therapies</h4>
+            <p>Classical Panchakarma procedures using authentic, physician-tested herbal formulations</p>
+          </div>
+          <div class="approach-card">
+            <div class="icon-box"><i class="fas fa-rotate"></i></div>
+            <h4>Holistic Follow-up</h4>
+            <p>Ongoing support, lifestyle coaching, and seasonal health reviews for lasting wellness</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SPECIAL PROGRAMS ═══════════════════════════════════ -->
+    <section class="section-pad" style="background:var(--bg)" id="special-programs">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge">Signature Programs</span>
+          <h2 class="section-title">Our Specialised <span class="text-green">Programs</span></h2>
+          <p class="section-subtitle">Comprehensive, physician-supervised programs designed for complete transformation.
+          </p>
+        </div>
+        <div class="special-programs-grid">
+          <div class="program-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="img-wrap">
+              <img src="images/panchakarma.png" alt="Specialized Panchakarma Program at Aksharam Ayurved" width="400"
+                height="220" loading="lazy" />
+            </div>
+            <div class="body">
+              <span class="badge">Signature</span>
+              <h3>Specialized Panchakarma Programs</h3>
+              <p>Our comprehensive Panchakarma programs include all five classical detox procedures, fully customised to
+                your constitution, disease state, and seasonal timing for maximum efficacy.</p>
+              <a href="contact.html" class="btn btn-premium" style="padding:10px 22px;font-size:.87rem"><i
+                  class="fas fa-calendar-check"></i> Book Program</a>
+            </div>
+          </div>
+          <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="img-wrap">
+              <img src="images/herbal_medicine.png" alt="Beej Shuddhi Fertility Program at Aksharam Ayurved" width="400"
+                height="220" loading="lazy" />
+            </div>
+            <div class="body">
+              <span class="badge">Fertility</span>
+              <h3>Beej Shuddhi &amp; Garbhadhana Sanskar</h3>
+              <p>Our signature fertility program purifies male and female reproductive tissues, harmonises hormonal
+                balance, and incorporates ancient Garbhadhana Sanskar rituals for couples seeking to conceive naturally.
+              </p>
+              <a href="contact.html" class="btn btn-premium" style="padding:10px 22px;font-size:.87rem"><i
+                  class="fas fa-calendar-check"></i> Book Program</a>
+            </div>
+          </div>
+          <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="img-wrap">
+              <img src="images/hero_ayurveda.png" alt="Preventive Healthcare Program at Aksharam Ayurved" width="400"
+                height="220" loading="lazy" />
+            </div>
+            <div class="body">
+              <span class="badge">Preventive</span>
+              <h3>Preventive Healthcare Program</h3>
+              <p>Seasonal Rasayana protocols, Dinacharya &amp; Ritucharya guidance, immunity strengthening therapies,
+                and personalised dietary plans to maintain robust health and prevent disease.</p>
+              <a href="contact.html" class="btn btn-premium" style="padding:10px 22px;font-size:.87rem"><i
+                  class="fas fa-calendar-check"></i> Book Program</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ TREATMENTS GRID (8) ════════════════════════════════ -->
+    <section class="section-pad" style="background:var(--bg-warm)" id="treatments">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge">All Treatments</span>
+          <h2 class="section-title">Our <span class="text-green">Treatment</span> Menu</h2>
+          <p class="section-subtitle">A comprehensive range of classical Ayurvedic therapies, each precisely indicated
+            for specific health conditions and applied with expert skill.</p>
+        </div>
+        <div class="treatment-grid-8" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="treatment-card-sm">
+            <div class="img-wrap">
+              <img src="images/kati_basti.png" alt="Kati Basti lower back oil therapy" width="300" height="172"
+                loading="lazy" />
+            </div>
+            <div class="body">
+              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i
+                  class="fas fa-fire-flame-curved"></i></div>
+              <h4>Kati Basti</h4>
+              <p>Warm medicated oil pooled in a dough ring over the lower back to relieve lumbar pain, sciatica, and
+                disc herniation.</p>
+            </div>
+          </div>
+
+          <div class="treatment-card-sm">
+            <div class="img-wrap">
+              <img src="images/massage_therapy.png" alt="Janu Basti knee joint therapy" width="300" height="172"
+                loading="lazy" />
+            </div>
+            <div class="body">
+              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-droplet"></i>
+              </div>
+              <h4>Janu Basti</h4>
+              <p>Warm medicated oil retention over the knee joint — effective for osteoarthritis, ligament injuries, and
+                knee pain.</p>
+            </div>
+          </div>
+
+          <div class="treatment-card-sm">
+            <div class="img-wrap">
+              <img src="images/therapy.png" alt="Upanah Sweda herbal poultice therapy" width="300" height="172"
+                loading="lazy" />
+            </div>
+            <div class="body">
+              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i
+                  class="fas fa-mortar-pestle"></i></div>
+              <h4>Upanah Sweda</h4>
+              <p>Herbal paste poultice applied to affected joints producing deep therapeutic sweat that relieves
+                stiffness and swelling.</p>
+            </div>
+          </div>
+
+          <div class="treatment-card-sm">
+            <div class="img-wrap">
+              <img src="images/panchakarma.png" alt="Lepana herbal paste application therapy" width="300" height="172"
+                loading="lazy" />
+            </div>
+            <div class="body">
+              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-hand-dots"></i>
+              </div>
+              <h4>Lepana</h4>
+              <p>Application of medicated herbal paste over the body to treat skin diseases, inflammation, oedema, and
+                joint stiffness.</p>
+            </div>
+          </div>
+
+          <div class="treatment-card-sm">
+            <div class="img-wrap">
+              <img src="images/shirodhara.png" alt="Pichu medicated cotton pad therapy" width="300" height="172"
+                loading="lazy" />
+            </div>
+            <div class="body">
+              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-circle-dot"></i>
+              </div>
+              <h4>Pichu</h4>
+              <p>Continuous application of medicated oil-soaked cotton pad on the spine or head — ideal for cervical
+                spondylosis and headaches.</p>
+            </div>
+          </div>
+
+          <div class="treatment-card-sm">
+            <div class="img-wrap">
+              <img src="images/virechan.png" alt="Agnikarma thermal micro-cauterisation therapy" width="300"
+                height="172" loading="lazy" />
+            </div>
+            <div class="body">
+              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-sun"></i></div>
+              <h4>Agnikarma</h4>
+              <p>Ancient thermal micro-cauterisation to treat chronic musculoskeletal pain, plantar fasciitis, and
+                neuropathic conditions.</p>
+            </div>
+          </div>
+
+          <div class="treatment-card-sm">
+            <div class="img-wrap">
+              <img src="images/hero_ayurveda.png" alt="Avagaha medicated sitz bath therapy" width="300" height="172"
+                loading="lazy" />
+            </div>
+            <div class="body">
+              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-bath"></i></div>
+              <h4>Avagaha</h4>
+              <p>Medicated herbal sitz bath — effective for haemorrhoids, fistula, pelvic disorders, and inflammatory
+                skin conditions.</p>
+            </div>
+          </div>
+
+          <div class="treatment-card-sm">
+            <div class="img-wrap">
+              <img src="images/shirodhara.png" alt="Shiro Abhyanga medicated head massage" width="300" height="172"
+                loading="lazy" />
+            </div>
+            <div class="body">
+              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-brain"></i></div>
+              <h4>Shiro Abhyanga</h4>
+              <p>Classical medicated head massage stimulating marma points to relieve stress, migraine, hair loss, and
+                insomnia.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SEASONAL ════════════════════════════════════════════ -->
+    <section class="treatments-section section-pad" id="seasonal">
+      <div class="container">
+        <div class="text-center" data-aos="fade-up">
+          <span class="badge">Seasonal</span>
+          <h2 class="section-title">Seasonal <span class="text-green">Therapies</span></h2>
+          <p class="section-subtitle">Align your body with nature's rhythms through our signature seasonal detox
+            programs.</p>
+        </div>
+        <div class="treatments-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="treatment-card">
+            <div class="treatment-img">
+              <img src="images/virechan.png" alt="Sharadiya Virechan autumn detox therapy" width="400" height="210"
+                loading="lazy" />
+            </div>
+            <div class="treatment-body">
+              <span class="treatment-badge">Autumn Therapy</span>
+              <h3>Sharadiya Virechan</h3>
+              <p>The autumnal cleanse targeting Pitta aggravation. Therapeutic purgation eliminates metabolic toxins,
+                resets digestive fire — ideal for September–October.</p>
+              <a href="contact.html" class="treatment-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="treatment-card">
+            <div class="treatment-img">
+              <img src="images/panchakarma.png" alt="Vasantik Vaman spring cleanse therapy" width="400" height="210"
+                loading="lazy" />
+            </div>
+            <div class="treatment-body">
+              <span class="treatment-badge">Spring Therapy</span>
+              <h3>Vasantik Vaman</h3>
+              <p>Spring's purification ritual addressing accumulated Kapha. Therapeutic emesis removes mucus, stimulates
+                digestive enzymes — best in February–March.</p>
+              <a href="contact.html" class="treatment-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="treatment-card">
+            <div class="treatment-img">
+              <img src="images/massage_therapy.png" alt="Monsoon Nourishment basti therapy" width="400" height="210"
+                loading="lazy" />
+            </div>
+            <div class="treatment-body">
+              <span class="treatment-badge">Monsoon Therapy</span>
+              <h3>Monsoon Nourishment</h3>
+              <p>The rainy season is Ayurveda's most potent healing window. Deep nourishing Basti therapies fortify
+                immunity and reverse Vata aggravation.</p>
+              <a href="contact.html" class="treatment-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CTA ════════════════════════════════════════════════ -->
+    <section class="cta-strip" id="services-cta">
+      <div class="container" data-aos="fade-up">
+        <span class="badge" style="background:rgba(255,255,255,.18);color:#fff">Start Today</span>
+        <h2>Begin Your Transformation</h2>
+        <p>Book a personalised consultation with Vaidya Dolly and receive a treatment plan crafted uniquely for you.</p>
+        <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+          <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Schedule Consultation</a>
+          <a href="https://wa.me/919499561561" class="btn btn-whatsapp" target="_blank" rel="noopener"><i
+              class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ═══ FOOTER ═════════════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="images/logoBG.png" alt="Aksharam Ayurved Panchakarma Hospital Logo"
+              style="height: 60px; margin-bottom: 15px; width: auto; object-fit: contain;">
+          </div>
+          <p class="footer-desc">Authentic Panchakarma and Ayurvedic hospital dedicated to holistic healing of body,
+            mind, and soul.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">About Aksharam</a></li>
+            <li><a href="service.html">Panchakarma Programs</a></li>
+            <li><a href="index.html#testimonials">Patient Stories</a></li>
+            <li><a href="contact.html">Tele-Consultations</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="service.html">Sharadiya Virechan</a></li>
+            <li><a href="service.html">Vasantik Vaman</a></li>
+            <li><a href="service.html">Panchakarma Therapies</a></li>
+            <li><a href="contact.html">Tele Consultation</a></li>
+            <li><a href="service.html">Diet &amp; Lifestyle Guidance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="footer-contact-text"><strong>Address</strong>Asarwa, Ahmedabad, Gujarat, India</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="footer-contact-text"><strong>Phone</strong>+91-9499-561-561</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div>
+            <div class="footer-contact-text"><strong>WhatsApp</strong>+91-9499561561</div>
+          </div>
+          <div class="footer-contact-item">
+            <div class="footer-contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="footer-contact-text"><strong>Email</strong><a href="mailto:aksharamayurved@gmail.com"
+                style="color:#74c69d">aksharamayurved@gmail.com</a></div>
+          </div>
+          <div class="footer-hours">
+            <p><strong>Mon – Sat:</strong> 9:00 AM – 7:00 PM</p>
+            <p><strong>Sunday:</strong> 10:00 AM – 2:00 PM</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 Aksharam Ayurved. All rights reserved.</p>
+        <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a
+            href="#">Disclaimer</a></div>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ═══ APPROACH ═══════════════════════════════════════════ -->
-<section class="section-pad-sm" style="background:var(--bg-warm)" id="approach">
-  <div class="container">
-    <div class="text-center" data-aos="fade-up">
-      <span class="badge">Our Method</span>
-      <h2 class="section-title">The Aksharam Healing <span class="text-green">Approach</span></h2>
-    </div>
-    <div class="approach-grid" data-aos="fade-up" data-aos-delay="100">
-      <div class="approach-card">
-        <div class="icon-box"><i class="fas fa-magnifying-glass"></i></div>
-        <h4>Prakriti Assessment</h4>
-        <p>Detailed analysis of your unique body constitution, dosha balance, and health history</p>
-      </div>
-      <div class="approach-card">
-        <div class="icon-box"><i class="fas fa-clipboard-list"></i></div>
-        <h4>Personalised Protocol</h4>
-        <p>Custom treatment plan combining the right therapies, herbs, diet, and lifestyle guidance</p>
-      </div>
-      <div class="approach-card">
-        <div class="icon-box"><i class="fas fa-leaf"></i></div>
-        <h4>Authentic Therapies</h4>
-        <p>Classical Panchakarma procedures using authentic, physician-tested herbal formulations</p>
-      </div>
-      <div class="approach-card">
-        <div class="icon-box"><i class="fas fa-rotate"></i></div>
-        <h4>Holistic Follow-up</h4>
-        <p>Ongoing support, lifestyle coaching, and seasonal health reviews for lasting wellness</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ SPECIAL PROGRAMS ═══════════════════════════════════ -->
-<section class="section-pad" style="background:var(--bg)" id="special-programs">
-  <div class="container">
-    <div class="text-center" data-aos="fade-up">
-      <span class="badge">Signature Programs</span>
-      <h2 class="section-title">Our Specialised <span class="text-green">Programs</span></h2>
-      <p class="section-subtitle">Comprehensive, physician-supervised programs designed for complete transformation.</p>
-    </div>
-    <div class="special-programs-grid">
-      <div class="program-card" data-aos="fade-up" data-aos-delay="0">
-        <div class="img-wrap">
-          <img src="images/panchakarma.png" alt="Specialized Panchakarma Program at Aksharam Ayurved" width="400" height="220" loading="lazy"/>
-        </div>
-        <div class="body">
-          <span class="badge">Signature</span>
-          <h3>Specialized Panchakarma Programs</h3>
-          <p>Our comprehensive Panchakarma programs include all five classical detox procedures, fully customised to your constitution, disease state, and seasonal timing for maximum efficacy.</p>
-          <a href="contact.html" class="btn btn-premium" style="padding:10px 22px;font-size:.87rem"><i class="fas fa-calendar-check"></i> Book Program</a>
-        </div>
-      </div>
-      <div class="program-card" data-aos="fade-up" data-aos-delay="100">
-        <div class="img-wrap">
-          <img src="images/herbal_medicine.png" alt="Beej Shuddhi Fertility Program at Aksharam Ayurved" width="400" height="220" loading="lazy"/>
-        </div>
-        <div class="body">
-          <span class="badge">Fertility</span>
-          <h3>Beej Shuddhi &amp; Garbhadhana Sanskar</h3>
-          <p>Our signature fertility program purifies male and female reproductive tissues, harmonises hormonal balance, and incorporates ancient Garbhadhana Sanskar rituals for couples seeking to conceive naturally.</p>
-          <a href="contact.html" class="btn btn-premium" style="padding:10px 22px;font-size:.87rem"><i class="fas fa-calendar-check"></i> Book Program</a>
-        </div>
-      </div>
-      <div class="program-card" data-aos="fade-up" data-aos-delay="200">
-        <div class="img-wrap">
-          <img src="images/hero_ayurveda.png" alt="Preventive Healthcare Program at Aksharam Ayurved" width="400" height="220" loading="lazy"/>
-        </div>
-        <div class="body">
-          <span class="badge">Preventive</span>
-          <h3>Preventive Healthcare Program</h3>
-          <p>Seasonal Rasayana protocols, Dinacharya &amp; Ritucharya guidance, immunity strengthening therapies, and personalised dietary plans to maintain robust health and prevent disease.</p>
-          <a href="contact.html" class="btn btn-premium" style="padding:10px 22px;font-size:.87rem"><i class="fas fa-calendar-check"></i> Book Program</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ TREATMENTS GRID (8) ════════════════════════════════ -->
-<section class="section-pad" style="background:var(--bg-warm)" id="treatments">
-  <div class="container">
-    <div class="text-center" data-aos="fade-up">
-      <span class="badge">All Treatments</span>
-      <h2 class="section-title">Our <span class="text-green">Treatment</span> Menu</h2>
-      <p class="section-subtitle">A comprehensive range of classical Ayurvedic therapies, each precisely indicated for specific health conditions and applied with expert skill.</p>
-    </div>
-    <div class="treatment-grid-8" data-aos="fade-up" data-aos-delay="100">
-
-      <div class="treatment-card-sm">
-        <div class="img-wrap">
-          <img src="images/kati_basti.png" alt="Kati Basti lower back oil therapy" width="300" height="172" loading="lazy"/>
-        </div>
-        <div class="body">
-          <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-fire-flame-curved"></i></div>
-          <h4>Kati Basti</h4>
-          <p>Warm medicated oil pooled in a dough ring over the lower back to relieve lumbar pain, sciatica, and disc herniation.</p>
-        </div>
-      </div>
-
-      <div class="treatment-card-sm">
-        <div class="img-wrap">
-          <img src="images/massage_therapy.png" alt="Janu Basti knee joint therapy" width="300" height="172" loading="lazy"/>
-        </div>
-        <div class="body">
-          <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-droplet"></i></div>
-          <h4>Janu Basti</h4>
-          <p>Warm medicated oil retention over the knee joint — effective for osteoarthritis, ligament injuries, and knee pain.</p>
-        </div>
-      </div>
-
-      <div class="treatment-card-sm">
-        <div class="img-wrap">
-          <img src="images/herbal_medicine.png" alt="Upanaha Sweda herbal poultice therapy" width="300" height="172" loading="lazy"/>
-        </div>
-        <div class="body">
-          <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-mortar-pestle"></i></div>
-          <h4>Upanaha Sweda</h4>
-          <p>Herbal paste poultice applied to affected joints producing deep therapeutic sweat that relieves stiffness and swelling.</p>
-        </div>
-      </div>
-
-      <div class="treatment-card-sm">
-        <div class="img-wrap">
-          <img src="images/panchakarma.png" alt="Lepana herbal paste application therapy" width="300" height="172" loading="lazy"/>
-        </div>
-        <div class="body">
-          <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-hand-dots"></i></div>
-          <h4>Lepana</h4>
-          <p>Application of medicated herbal paste over the body to treat skin diseases, inflammation, oedema, and joint stiffness.</p>
-        </div>
-      </div>
-
-      <div class="treatment-card-sm">
-        <div class="img-wrap">
-          <img src="images/shirodhara.png" alt="Pichu medicated cotton pad therapy" width="300" height="172" loading="lazy"/>
-        </div>
-        <div class="body">
-          <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-circle-dot"></i></div>
-          <h4>Pichu</h4>
-          <p>Continuous application of medicated oil-soaked cotton pad on the spine or head — ideal for cervical spondylosis and headaches.</p>
-        </div>
-      </div>
-
-      <div class="treatment-card-sm">
-        <div class="img-wrap">
-          <img src="images/virechan.png" alt="Agnikarma thermal micro-cauterisation therapy" width="300" height="172" loading="lazy"/>
-        </div>
-        <div class="body">
-          <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-sun"></i></div>
-          <h4>Agnikarma</h4>
-          <p>Ancient thermal micro-cauterisation to treat chronic musculoskeletal pain, plantar fasciitis, and neuropathic conditions.</p>
-        </div>
-      </div>
-
-      <div class="treatment-card-sm">
-        <div class="img-wrap">
-          <img src="images/hero_ayurveda.png" alt="Avagaha medicated sitz bath therapy" width="300" height="172" loading="lazy"/>
-        </div>
-        <div class="body">
-          <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-bath"></i></div>
-          <h4>Avagaha</h4>
-          <p>Medicated herbal sitz bath — effective for haemorrhoids, fistula, pelvic disorders, and inflammatory skin conditions.</p>
-        </div>
-      </div>
-
-      <div class="treatment-card-sm">
-        <div class="img-wrap">
-          <img src="images/shirodhara.png" alt="Shiro Abhyanga medicated head massage" width="300" height="172" loading="lazy"/>
-        </div>
-        <div class="body">
-          <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-brain"></i></div>
-          <h4>Shiro Abhyanga</h4>
-          <p>Classical medicated head massage stimulating marma points to relieve stress, migraine, hair loss, and insomnia.</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ═══ SEASONAL ════════════════════════════════════════════ -->
-<section class="treatments-section section-pad" id="seasonal">
-  <div class="container">
-    <div class="text-center" data-aos="fade-up">
-      <span class="badge">Seasonal</span>
-      <h2 class="section-title">Seasonal <span class="text-green">Therapies</span></h2>
-      <p class="section-subtitle">Align your body with nature's rhythms through our signature seasonal detox programs.</p>
-    </div>
-    <div class="treatments-grid" data-aos="fade-up" data-aos-delay="100">
-      <div class="treatment-card">
-        <div class="treatment-img">
-          <img src="images/virechan.png" alt="Sharadiya Virechan autumn detox therapy" width="400" height="210" loading="lazy"/>
-        </div>
-        <div class="treatment-body">
-          <span class="treatment-badge">Autumn Therapy</span>
-          <h3>Sharadiya Virechan</h3>
-          <p>The autumnal cleanse targeting Pitta aggravation. Therapeutic purgation eliminates metabolic toxins, resets digestive fire — ideal for September–October.</p>
-          <a href="contact.html" class="treatment-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="treatment-card">
-        <div class="treatment-img">
-          <img src="images/panchakarma.png" alt="Vasantik Vaman spring cleanse therapy" width="400" height="210" loading="lazy"/>
-        </div>
-        <div class="treatment-body">
-          <span class="treatment-badge">Spring Therapy</span>
-          <h3>Vasantik Vaman</h3>
-          <p>Spring's purification ritual addressing accumulated Kapha. Therapeutic emesis removes mucus, stimulates digestive enzymes — best in February–March.</p>
-          <a href="contact.html" class="treatment-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-      <div class="treatment-card">
-        <div class="treatment-img">
-          <img src="images/massage_therapy.png" alt="Monsoon Nourishment basti therapy" width="400" height="210" loading="lazy"/>
-        </div>
-        <div class="treatment-body">
-          <span class="treatment-badge">Monsoon Therapy</span>
-          <h3>Monsoon Nourishment</h3>
-          <p>The rainy season is Ayurveda's most potent healing window. Deep nourishing Basti therapies fortify immunity and reverse Vata aggravation.</p>
-          <a href="contact.html" class="treatment-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ═══ CTA ════════════════════════════════════════════════ -->
-<section class="cta-strip" id="services-cta">
-  <div class="container" data-aos="fade-up">
-    <span class="badge" style="background:rgba(255,255,255,.18);color:#fff">Start Today</span>
-    <h2>Begin Your Transformation</h2>
-    <p>Book a personalised consultation with Vaidya Dolly and receive a treatment plan crafted uniquely for you.</p>
-    <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-      <a href="contact.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Schedule Consultation</a>
-      <a href="https://wa.me/918530422103" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Chat on WhatsApp</a>
-    </div>
-  </div>
-</section>
-</main>
-
-<!-- ═══ FOOTER ═════════════════════════════════════════════ -->
-<footer class="footer" role="contentinfo">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <div class="footer-logo">
-          <img src="images/logoBG.png" alt="Aksharam Ayurved Panchakarma Hospital Logo" style="height: 60px; margin-bottom: 15px; width: auto; object-fit: contain;">
-        </div>
-        <p class="footer-desc">Authentic Panchakarma and Ayurvedic hospital dedicated to holistic healing of body, mind, and soul.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Quick Links</h4>
-        <ul>
-          <li><a href="about.html">About Aksharam</a></li>
-          <li><a href="service.html">Panchakarma Programs</a></li>
-          <li><a href="index.html#testimonials">Patient Stories</a></li>
-          <li><a href="contact.html">Tele-Consultations</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Our Services</h4>
-        <ul>
-          <li><a href="service.html">Sharadiya Virechan</a></li>
-          <li><a href="service.html">Vasantik Vaman</a></li>
-          <li><a href="service.html">Panchakarma Therapies</a></li>
-          <li><a href="contact.html">Tele Consultation</a></li>
-          <li><a href="service.html">Diet &amp; Lifestyle Guidance</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact Information</h4>
-        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div><div class="footer-contact-text"><strong>Address</strong>Asarwa, Ahmedabad, Gujarat, India</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fas fa-phone"></i></div><div class="footer-contact-text"><strong>Phone</strong>+91-9499-561-561</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fab fa-whatsapp"></i></div><div class="footer-contact-text"><strong>WhatsApp</strong>+91-85304-22103</div></div>
-        <div class="footer-contact-item"><div class="footer-contact-icon"><i class="fas fa-envelope"></i></div><div class="footer-contact-text"><strong>Email</strong><a href="mailto:aksharamayurved@gmail.com" style="color:#74c69d">aksharamayurved@gmail.com</a></div></div>
-        <div class="footer-hours"><p><strong>Mon – Sat:</strong> 9:00 AM – 7:00 PM</p><p><strong>Sunday:</strong> 10:00 AM – 2:00 PM</p></div>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2024 Aksharam Ayurved. All rights reserved.</p>
-      <div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a><a href="#">Disclaimer</a></div>
-    </div>
-  </div>
-</footer>
-
-<a href="https://wa.me/918530422103" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
-<script src="js/main.js"></script>
+  <a href="https://wa.me/919499561561" class="whatsapp-float" aria-label="Chat on WhatsApp" target="_blank"
+    rel="noopener"><i class="fab fa-whatsapp"></i></a>
+  <script src="js/main.js"></script>
 </body>
+
 </html>
