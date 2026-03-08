@@ -177,18 +177,15 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 /* ── TESTIMONIAL AUTO-SCROLL ─────────────────────────────── */
 (function() {
   const slider = document.getElementById('testimonial-slider');
+  const prevBtn = document.getElementById('review-prev');
+  const nextBtn = document.getElementById('review-next');
   if (!slider) return;
   
   let intervalId;
   
-  const startScroll = () => {
-    intervalId = setInterval(() => {
-      // pause on hover
-      if (slider.matches(':hover')) return; 
-      
+  const scrollNext = () => {
       const card = slider.querySelector('.testimonial-card');
       if (!card) return;
-      
       const cardWidth = card.offsetWidth + 24; // 24px gap defined in CSS
       
       // If we reach the end, scroll back to 0
@@ -197,8 +194,47 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
       } else {
         slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
       }
-    }, 3500); // Scrolls every 3.5 seconds
   };
+
+  const scrollPrev = () => {
+      const card = slider.querySelector('.testimonial-card');
+      if (!card) return;
+      const cardWidth = card.offsetWidth + 24;
+      
+      // If we reach the beginning, scroll back to end
+      if (slider.scrollLeft <= 10) {
+        slider.scrollTo({ left: slider.scrollWidth, behavior: 'smooth' });
+      } else {
+        slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      }
+  };
+
+  const startScroll = () => {
+    intervalId = setInterval(() => {
+      // pause on hover
+      if (slider.matches(':hover')) return; 
+      scrollNext();
+    }, 4500); // Scrolls every 4.5 seconds
+  };
+
+  const resetScroll = () => {
+    clearInterval(intervalId);
+    startScroll();
+  };
+
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      scrollNext();
+      resetScroll();
+    });
+  }
+
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      scrollPrev();
+      resetScroll();
+    });
+  }
   
   // start rolling after slight delay to allow AOS animations to finish
   setTimeout(startScroll, 2000);

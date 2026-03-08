@@ -387,6 +387,38 @@ p{color:var(--text-muted);font-size:18px;line-height:1.8}
 }
 .testimonial-name{font-weight:600;color:var(--text);font-size:.9rem}
 .testimonial-loc{font-size:.77rem;color:var(--text-light)}
+.review-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.review-prev,
+.review-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: var(--green-700);
+  box-shadow: var(--sh-sm);
+  transition: var(--ease);
+}
+.review-prev:hover,
+.review-next:hover {
+  background: var(--green-50);
+  color: var(--green-900);
+}
+.review-prev { left: -20px; }
+.review-next { right: -20px; }
 
 /* ── CLINIC GALLERY ──────────────────────────────────────── */
 .gallery-section{background:var(--bg)}
