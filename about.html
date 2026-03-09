@@ -11,6 +11,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" />
+  </noscript>
   <style>
     .about-page-hero {
       background: linear-gradient(140deg, var(--bg-warm) 0%, var(--bg) 55%, #edf6ee 100%);
@@ -36,11 +45,25 @@
       align-items: center;
     }
 
+    /* Prevent data-aos flash on above-the-fold hero content */
+    .about-page-hero [data-aos],
+    .about-page-hero [data-aos-delay] {
+      opacity: 1 !important;
+      transform: none !important;
+      transition: none !important;
+    }
+
+    /* Suppress all animations/transitions in the hero section */
     .about-page-hero * {
       animation: none !important;
-      transition: none !important;
-      transform: none !important;
-      opacity: 1 !important;
+    }
+
+    /* Reserve navbar logo space to prevent CLS */
+    .logo-wrap img {
+      display: block;
+      height: 100px;
+      width: auto;
+      aspect-ratio: 1 / 1;
     }
   </style>
 </head>
@@ -78,12 +101,12 @@
     <section class="about-page-hero" id="about-hero">
       <div class="container">
         <div class="doctor-grid">
-          <div class="doctor-img-wrap" data-aos="fade-right" style="text-align:center;">
+          <div class="doctor-img-wrap" style="text-align:center;">
             <img class="doctor-img" src="images/doctor.webp" alt="Vaidya Dolly - Ayurvedic Physician"
               style="border-radius: 16px; object-fit: cover; max-width: 460px; box-shadow: 0 20px 40px rgba(0,0,0,0.15); width: 100%; margin: 0 auto;"
               width="460" height="550" loading="eager" />
           </div>
-          <div class="doctor-info" data-aos="fade-left" data-aos-delay="120">
+          <div class="doctor-info">
             <span class="badge">Your Trusted Vaidya</span>
             <h1>Meet <em style="color:var(--green-500);font-style:italic;">Vaidya Dolly Solanki Makwana</em></h1>
             <div class="doctor-credentials">
@@ -92,8 +115,8 @@
               <span class="credential">International Panchakarma Physician</span>
             </div>
             <p>A passionate healer with roots deep in Ayurvedic tradition, Vaidya Dolly Solanki Makwana has dedicated
-              over 8 years to transforming lives through the ancient wisdom of Ayurveda. Her compassionate approach,
-              combined with clinical excellence, has earned her trust from thousands of patients across India and 9+
+              over 9 years to transforming lives through the ancient wisdom of Ayurveda. Her compassionate approach,
+              combined with clinical excellence, has earned her trust from thousands of patients across India and 8+
               countries worldwide.</p>
             <p>Her expertise spans Panchakarma therapies, women's reproductive health, fertility treatments, and
               preventive Ayurvedic care. She communicates fluently in English, Hindi, and Gujarati, making holistic
@@ -356,7 +379,9 @@
             <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div class="footer-contact-text">
               <strong>Address</strong>
-              <span style="font-weight: 600; font-size: 1.05em; color: #fff; display: block; margin-bottom: 2px; line-height: 1.4;">AKSHARAM AYURVED - Best Panchkarma &amp; Ayurved Consultation Centre in Ahmedabad</span>
+              <span
+                style="font-weight: 600; font-size: 1.05em; color: #fff; display: block; margin-bottom: 2px; line-height: 1.4;">AKSHARAM
+                AYURVED - Best Panchkarma &amp; Ayurved Consultation Centre in Ahmedabad</span>
               F - 419, SUMEL 11, near BAPS Circle, Bhadreshwar Society, Kazipur Dariyapur, Ahmedabad, Gujarat 380004
             </div>
           </div>

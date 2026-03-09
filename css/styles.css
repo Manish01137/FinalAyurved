@@ -413,7 +413,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  min-height: 72px;
+  padding-top: 18px;
+  padding-bottom: 18px;
   gap: 20px
 }
 
@@ -425,11 +427,11 @@ p {
 .logo-wrap {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 14px;
 }
 
 .logo-wrap img {
-  height: 90px;
+  height: 100px;
   width: auto;
 }
 
@@ -440,7 +442,7 @@ p {
 }
 
 .brand-name {
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 600;
   letter-spacing: 0.5px;
   color: var(--green-900);
@@ -454,14 +456,14 @@ p {
 .navbar-nav {
   display: flex;
   align-items: center;
-  gap: 4px
+  gap: 28px
 }
 
 .nav-link {
   padding: 8px 15px;
   border-radius: 8px;
   font-weight: 500;
-  font-size: .9rem;
+  font-size: 18px;
   color: var(--text);
   position: relative;
   transition: color .25s;
@@ -494,6 +496,12 @@ p {
   display: flex;
   align-items: center;
   gap: 14px
+}
+
+.navbar-book-btn {
+  padding: 12px 26px;
+  font-size: 16px;
+  border-radius: 30px;
 }
 
 .social-icons {
@@ -548,14 +556,14 @@ p {
 .footer {
   background: var(--emerald-footer);
   color: #c8e6d6;
-  padding: 68px 0 0
+  padding: 52px 0 0
 }
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.4fr 1fr 1fr 1.3fr;
-  gap: 44px;
-  padding-bottom: 52px;
+  grid-template-columns: 1.3fr 1fr 1fr 1.3fr;
+  gap: 36px;
+  padding-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
 
@@ -596,10 +604,10 @@ p {
 }
 
 .footer-desc {
-  font-size: .95rem;
+  font-size: 1rem;
   color: #96bfa8;
-  line-height: 1.85;
-  margin: 14px 0 18px
+  line-height: 1.75;
+  margin: 10px 0 14px
 }
 
 .footer-social {
@@ -621,17 +629,17 @@ p {
 
 .footer-col h4 {
   font-family: var(--font-h);
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: #fff;
-  margin-bottom: 18px
+  margin-bottom: 14px
 }
 
 .footer-col ul li {
-  margin-bottom: 9px
+  margin-bottom: 10px
 }
 
 .footer-col ul li a {
-  font-size: .95rem;
+  font-size: 1.05rem;
   color: #96bfa8;
   display: flex;
   align-items: center;
@@ -671,18 +679,18 @@ p {
 }
 
 .footer-contact-text {
-  font-size: .95rem;
+  font-size: 1rem;
   color: #96bfa8;
-  line-height: 1.55
+  line-height: 1.6
 }
 
 .footer-contact-text strong {
   display: block;
   color: #c8e6d6;
-  font-size: .8rem;
+  font-size: .82rem;
   text-transform: uppercase;
   letter-spacing: .06em;
-  margin-bottom: 1px
+  margin-bottom: 2px
 }
 
 .footer-hours {
@@ -2223,12 +2231,17 @@ select.form-control {
     display: flex
   }
 
+  .navbar-inner {
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
   .logo-wrap img {
-    height: 67px;
+    height: 70px;
   }
 
   .brand-name {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .footer-brand img,

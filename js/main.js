@@ -75,6 +75,30 @@
   const targets = document.querySelectorAll('[data-aos]');
   if (!targets.length) return;
 
+  // Mark elements already in viewport on load as instantly animated
+  // (no transition) to prevent the initial opacity-0 → 1 flash
+  const instantlyReveal = (el) => {
+    el.style.transition = 'none';
+    el.style.opacity = '1';
+    el.style.transform = 'none';
+    el.classList.add('aos-animate');
+    // Re-enable transitions after a frame so hover/other effects still work
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => { el.style.transition = ''; });
+    });
+  };
+
+  // Check which elements are already in the viewport at load time
+  const viewportHeight = window.innerHeight;
+  targets.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < viewportHeight && rect.bottom > 0) {
+      // Already visible — animate immediately without flash
+      instantlyReveal(el);
+    }
+  });
+
+  // For the rest, use IntersectionObserver with smooth animation
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -85,7 +109,11 @@
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-  targets.forEach(el => io.observe(el));
+  targets.forEach(el => {
+    if (!el.classList.contains('aos-animate')) {
+      io.observe(el);
+    }
+  });
 })();
 
 /* ── COUNTER ANIMATIONS ────────────────────────────────────── */
@@ -93,29 +121,48 @@
   const counters = document.querySelectorAll('[data-count]');
   if (!counters.length) return;
 
+  const runCounter = (el) => {
+    const target = +el.dataset.count;
+    const suffix = el.dataset.suffix || '';
+    const duration = 1800;
+    const start = performance.now();
+
+    function tick(now) {
+      const elapsed = Math.min(now - start, duration);
+      const t = elapsed / duration;
+      const eased = 1 - Math.pow(1 - t, 3); // ease-out-cubic
+      const val = Math.round(eased * target);
+      el.textContent = (val >= 1000 ? val.toLocaleString() : val) + suffix;
+      if (elapsed < duration) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  };
+
+  const viewportHeight = window.innerHeight;
+
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (!entry.isIntersecting) return;
-      const el = entry.target;
-      const target = +el.dataset.count;
-      const suffix = el.dataset.suffix || '';
-      const duration = 1800;
-      const start = performance.now();
-
-      function tick(now) {
-        const elapsed = Math.min(now - start, duration);
-        const t = elapsed / duration;
-        const eased = 1 - Math.pow(1 - t, 3); // ease-out-cubic
-        const val = Math.round(eased * target);
-        el.textContent = (val >= 1000 ? val.toLocaleString() : val) + suffix;
-        if (elapsed < duration) requestAnimationFrame(tick);
-      }
-      requestAnimationFrame(tick);
-      io.unobserve(el);
+      runCounter(entry.target);
+      io.unobserve(entry.target);
     });
   }, { threshold: 0.5 });
 
-  counters.forEach(el => io.observe(el));
+  counters.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    const alreadyVisible = rect.top < viewportHeight && rect.bottom > 0;
+
+    if (alreadyVisible) {
+      // Already in viewport on load — skip count-up, just show final value
+      // This prevents the "8+ → 0 → 8+" jump
+      const target = +el.dataset.count;
+      const suffix = el.dataset.suffix || '';
+      el.textContent = (target >= 1000 ? target.toLocaleString() : target) + suffix;
+    } else {
+      // Below the fold — animate when scrolled into view
+      io.observe(el);
+    }
+  });
 })();
 
 /* ── FORM SUBMISSION ────────────────────────────────────────── */
