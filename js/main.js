@@ -214,7 +214,7 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
       // pause on hover
       if (slider.matches(':hover')) return; 
       scrollNext();
-    }, 4500); // Scrolls every 4.5 seconds
+    }, 2000); // Scrolls every 2.0 seconds
   };
 
   const resetScroll = () => {
