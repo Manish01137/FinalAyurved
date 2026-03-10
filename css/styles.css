@@ -182,16 +182,21 @@ p {
 
 @media(max-width:768px) {
   h1 {
-    font-size: clamp(28px, 6vw, 32px)
+    font-size: clamp(26px, 6vw, 30px);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   h2,
   .section-title {
-    font-size: clamp(22px, 5vw, 26px)
+    font-size: clamp(22px, 5vw, 26px);
+    overflow-wrap: break-word;
+    word-wrap: break-word;
   }
 
   h3 {
-    font-size: 22px
+    font-size: 20px;
+    overflow-wrap: break-word;
   }
 
   p {
@@ -2323,16 +2328,16 @@ select.form-control {
 
   .services-grid,
   .testimonials-grid,
-  .treatments-grid {
-    grid-template-columns: 1fr
+  .treatments-grid,
+  .treatment-grid-8,
+  .stats-grid,
+  .recognition-grid,
+  .spec-grid {
+    grid-template-columns: 1fr;
   }
 
   .special-programs-grid {
     grid-template-columns: 1fr
-  }
-
-  .stats-grid {
-    grid-template-columns: repeat(2, 1fr)
   }
 
   .stat-card {
@@ -2347,15 +2352,15 @@ select.form-control {
 
   .footer-bottom {
     flex-direction: column;
-    text-align: center
+    text-align: center;
+    gap: 16px;
   }
 
-  .recognition-grid {
-    grid-template-columns: 1fr 1fr
-  }
-
-  .spec-grid {
-    grid-template-columns: repeat(2, 1fr)
+  .footer-bottom-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
   }
 
   .section-pad {
@@ -2405,31 +2410,24 @@ select.form-control {
     gap: 20px
   }
 
-  .hero-actions {
+  .hero-actions,
+  .services-hero-btns,
+  .btn-group {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
     gap: 16px
   }
 
-  .hero-actions .btn {
-    width: 100%
-  }
-
-  .treatment-grid-8 {
-    grid-template-columns: 1fr
-  }
-
-  .recognition-grid {
-    grid-template-columns: 1fr
-  }
-
-  .spec-grid {
-    grid-template-columns: 1fr
+  .hero-actions .btn,
+  .services-hero-btns .btn,
+  .btn-group .btn {
+    width: 100%;
+    margin: 0;
   }
 
   .stats-row .stat-card {
-    flex: 1 1 calc(50% - 16px);
+    flex: 1 1 100%;
   }
 
   .hero-img-wrap img {
