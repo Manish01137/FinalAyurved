@@ -398,6 +398,13 @@ p {
   font-size: 15px
 }
 
+.btn-group {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 /* ── NAVBAR ──────────────────────────────────────────────── */
 .navbar {
   position: sticky;
@@ -2403,20 +2410,13 @@ select.form-control {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr)
   }
-}
-
-@media(max-width:480px) {
-  .hero-stats {
-    gap: 20px
-  }
-
   .hero-actions,
   .services-hero-btns,
   .btn-group {
     flex-direction: column;
     align-items: stretch;
     width: 100%;
-    gap: 16px
+    gap: 20px
   }
 
   .hero-actions .btn,
@@ -2424,6 +2424,18 @@ select.form-control {
   .btn-group .btn {
     width: 100%;
     margin: 0;
+  }
+
+  .hero-actions .btn + .btn,
+  .services-hero-btns .btn + .btn,
+  .btn-group .btn + .btn {
+    margin-top: 16px;
+  }
+}
+
+@media(max-width:480px) {
+  .hero-stats {
+    gap: 20px
   }
 
   .stats-row .stat-card {
