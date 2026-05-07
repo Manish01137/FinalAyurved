@@ -1787,9 +1787,19 @@ select.form-control {
 
 .doctor-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 64px;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 48px;
   align-items: center
+}
+
+.doctor-info {
+  min-width: 0;
+}
+
+.doctor-info h1 {
+  font-size: clamp(28px, 3.6vw, 40px);
+  line-height: 1.2;
+  margin-bottom: 14px;
 }
 
 .doctor-img-wrap {
@@ -1839,11 +1849,11 @@ select.form-control {
 }
 
 .stats-row {
-  display: flex;
-  gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 14px;
   align-items: stretch;
   margin-top: 28px;
-  flex-wrap: nowrap;
 }
 
 .stat-card {
@@ -1857,7 +1867,6 @@ select.form-control {
   text-align: center;
   border: 1px solid var(--border);
   box-shadow: var(--sh-sm);
-  flex: 1;
 }
 
 .stat-card .num {
