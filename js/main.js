@@ -99,6 +99,10 @@
   });
 
   // For the rest, use IntersectionObserver with smooth animation
+  // threshold: 0 (any pixel) + small bottom rootMargin — works for both
+  // short cards and very tall sections (e.g. the full treatment gallery
+  // on mobile, where 1-column layout makes the parent thousands of px tall
+  // and a percentage threshold can never be reached)
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -107,7 +111,7 @@
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0, rootMargin: '0px 0px -60px 0px' });
 
   targets.forEach(el => {
     if (!el.classList.contains('aos-animate')) {
