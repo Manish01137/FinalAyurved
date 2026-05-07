@@ -493,7 +493,7 @@ p {
 }
 
 .brand-name::after {
-  content: 'Authentic Panchakarma Hospital';
+  content: 'Ancient Wisdom for Modern Living';
   display: block;
   font-family: var(--font-b);
   font-size: 9px;
@@ -735,7 +735,7 @@ p {
 }
 
 .footer-brand-name::after {
-  content: 'Panchakarma & Ayurveda';
+  content: 'Ancient Wisdom for Modern Living';
   display: block;
   font-family: var(--font-b);
   font-size: 9px;
