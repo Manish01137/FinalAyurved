@@ -286,3 +286,25 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
   // start rolling after slight delay to allow AOS animations to finish
   setTimeout(startScroll, 2000);
 })();
+
+/* ── TREATMENT GALLERY FILTER (Service page) ─────────────── */
+(function () {
+  const buttons = document.querySelectorAll('.t-filter-btn');
+  const cards = document.querySelectorAll('.treatment-gallery .t-card');
+  if (!buttons.length || !cards.length) return;
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      cards.forEach(card => {
+        const cats = (card.getAttribute('data-cat') || '').split(/\s+/);
+        const show = filter === 'all' || cats.includes(filter);
+        card.classList.toggle('is-hidden', !show);
+      });
+    });
+  });
+})();

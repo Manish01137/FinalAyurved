@@ -104,6 +104,7 @@
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link">About</a>
         <a href="service.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
         <a href="contact.html" class="nav-link">Contact Us</a>
       </nav>
       <div class="navbar-right">
@@ -390,121 +391,752 @@
       </div>
     </section>
 
-    <!-- ═══ TREATMENTS GRID (8) ════════════════════════════════ -->
-    <section class="section-pad" style="background:var(--bg-warm)" id="treatments">
+    <!-- ═══ TREATMENTS GALLERY ═════════════════════════════════ -->
+    <section class="section-pad treatment-gallery-section" id="treatments">
       <div class="container">
         <div class="text-center" data-aos="fade-up">
-          <span class="badge">All Treatments</span>
-          <h2 class="section-title">Panchakarma <span class="text-green">Programs</span></h2>
-          <p class="section-subtitle">A comprehensive range of classical Ayurvedic therapies, each precisely indicated
-            for specific health conditions and applied with expert skill.</p>
+          <span class="badge">Authentic Therapies</span>
+          <h2 class="section-title">Our Complete <span class="text-green">Treatment Catalogue</span></h2>
+          <p class="section-subtitle">Over 50 classical Ayurvedic therapies, programs, and rituals — each precisely
+            indicated for specific health conditions and applied with expert skill.</p>
         </div>
-        <div class="treatment-grid-8" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="treatment-card-sm">
-            <div class="img-wrap">
-              <img src="images/kati_basti.png" alt="Kati Basti lower back oil therapy" width="300" height="172"
-                loading="lazy" />
+        <!-- Filter Pills -->
+        <div class="t-filter" data-aos="fade-up" data-aos-delay="80">
+          <button type="button" class="t-filter-btn active" data-filter="all">All</button>
+          <button type="button" class="t-filter-btn" data-filter="panchakarma">Panchakarma</button>
+          <button type="button" class="t-filter-btn" data-filter="basti">Basti Therapies</button>
+          <button type="button" class="t-filter-btn" data-filter="body">Body Therapies</button>
+          <button type="button" class="t-filter-btn" data-filter="eye-face">Eye, Face &amp; Head</button>
+          <button type="button" class="t-filter-btn" data-filter="reversal">Reversal Programs</button>
+          <button type="button" class="t-filter-btn" data-filter="wellness">Wellness Programs</button>
+          <button type="button" class="t-filter-btn" data-filter="mother-child">Mother &amp; Child</button>
+          <button type="button" class="t-filter-btn" data-filter="beauty">Beauty &amp; Skin</button>
+          <button type="button" class="t-filter-btn" data-filter="diagnosis">Diagnosis &amp; Diet</button>
+          <button type="button" class="t-filter-btn" data-filter="para-surgical">Para-Surgical</button>
+        </div>
+
+        <div class="treatment-gallery" data-aos="fade-up" data-aos-delay="100">
+
+          <!-- ── Panchakarma ── -->
+          <article class="t-card" data-cat="panchakarma">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/STVT7655.PNG" alt="Vaman Karma" loading="lazy" />
+              <span class="t-cat-tag">Panchakarma</span>
             </div>
-            <div class="body">
-              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i
-                  class="fas fa-fire-flame-curved"></i></div>
+            <div class="t-card-body">
+              <h4>Vaman Karma</h4>
+              <p>Therapeutic emesis that eliminates excess Kapha and clears upper-body channels — ideal for asthma,
+                allergies, and chronic respiratory disorders.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="panchakarma">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/LTWL2689.PNG" alt="Virechan Karma" loading="lazy" />
+              <span class="t-cat-tag">Panchakarma</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Virechan Karma</h4>
+              <p>Therapeutic purgation that removes excess Pitta from the gut and liver — resets digestion and clears
+                metabolic toxins.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="panchakarma">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/DURW7799.PNG" alt="Abhyantar (Internal) Basti" loading="lazy" />
+              <span class="t-cat-tag">Panchakarma</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Abhyantar (Internal) Basti</h4>
+              <p>Medicated enemas using oil and herbal decoctions — the most powerful Panchakarma therapy for Vata
+                disorders, paralysis, and chronic constipation.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="panchakarma">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/QFQH8725.PNG" alt="Nasya" loading="lazy" />
+              <span class="t-cat-tag">Panchakarma</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Nasya</h4>
+              <p>Medicated nasal drops that cleanse head and neck channels — relieves sinusitis, migraines, and improves
+                cognitive clarity.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="panchakarma para-surgical">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/MSME8134.PNG" alt="Raktamokshan (Venesection)" loading="lazy" />
+              <span class="t-cat-tag">Panchakarma</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Raktamokshan (Venesection)</h4>
+              <p>Controlled bloodletting that removes toxic blood — used for chronic skin disorders, gout, and varicose
+                veins.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- ── Basti Therapies ── -->
+          <article class="t-card" data-cat="basti">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/CKUI4993.PNG" alt="Kati Basti" loading="lazy" />
+              <span class="t-cat-tag">Basti Therapy</span>
+            </div>
+            <div class="t-card-body">
               <h4>Kati Basti</h4>
-              <p>Warm medicated oil pooled in a dough ring over the lower back to relieve lumbar pain, sciatica, and
+              <p>Warm medicated oil pooled in a dough ring over the lower back — relieves lumbar pain, sciatica, and
                 disc herniation.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
             </div>
-          </div>
+          </article>
 
-          <div class="treatment-card-sm">
-            <div class="img-wrap">
-              <img src="images/janu_basti.jpg" alt="Janu Basti Therapy">
+          <article class="t-card" data-cat="basti">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/XZZY6274.PNG" alt="Janu Basti" loading="lazy" />
+              <span class="t-cat-tag">Basti Therapy</span>
             </div>
-            <div class="body">
-              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-droplet"></i>
-              </div>
+            <div class="t-card-body">
               <h4>Janu Basti</h4>
               <p>Warm medicated oil retention over the knee joint — effective for osteoarthritis, ligament injuries, and
-                knee pain.</p>
+                chronic knee pain.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
             </div>
-          </div>
+          </article>
 
-          <div class="treatment-card-sm">
-            <div class="img-wrap">
-              <img src="images/therapy.png" alt="Upanah Sweda herbal poultice therapy" width="300" height="172"
+          <article class="t-card" data-cat="basti">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/LBTO7139.PNG" alt="Griva Basti" loading="lazy" />
+              <span class="t-cat-tag">Basti Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Griva Basti</h4>
+              <p>Medicated oil reservoir over the cervical spine — relieves neck pain, cervical spondylosis, and
+                stiffness.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="basti">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/KZWU8009.PNG" alt="Shiro Basti" loading="lazy" />
+              <span class="t-cat-tag">Basti Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Shiro Basti</h4>
+              <p>Warm oil pooled over the head in a leather cap — calms the nervous system and treats facial paralysis,
+                insomnia, and headaches.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="basti">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/TNBW7047.PNG" alt="Churna Basti" loading="lazy" />
+              <span class="t-cat-tag">Basti Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Churna Basti</h4>
+              <p>Herbal-powder Basti for stubborn musculoskeletal disorders, rheumatoid conditions, and persistent joint
+                inflammation.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- ── Body Therapies ── -->
+          <article class="t-card" data-cat="body">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/CHUW4129.PNG" alt="Sarvang Abhyang" loading="lazy" />
+              <span class="t-cat-tag">Body Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Sarvang Abhyang</h4>
+              <p>Synchronised full-body warm-oil massage that improves circulation, releases deep-seated toxins, and
+                induces profound relaxation.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="body">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/CAEQ1485.PNG" alt="Sarvang Dhara (Pizhichil)" loading="lazy" />
+              <span class="t-cat-tag">Body Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Sarvang Dhara (Pizhichil)</h4>
+              <p>Continuous flow of warm medicated oil over the entire body — nourishes tissues and relieves chronic
+                Vata disorders.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="body">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/QEPX7864.PNG" alt="Sarvang Swedan" loading="lazy" />
+              <span class="t-cat-tag">Body Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Sarvang Swedan</h4>
+              <p>Whole-body herbal steam therapy that opens channels, expels toxins, and prepares the body for
+                Panchakarma protocols.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="body">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/SQAQ0874.PNG" alt="Udwartan" loading="lazy" />
+              <span class="t-cat-tag">Body Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Udwartan</h4>
+              <p>Vigorous herbal-powder massage that scrapes away accumulated fat and Kapha — excellent for obesity,
+                cellulite, and skin tone.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="body">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/LKUN4068.PNG" alt="Patrapind Swedan (Pottali Massage)" loading="lazy" />
+              <span class="t-cat-tag">Body Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Patrapind Swedan (Pottali Massage)</h4>
+              <p>Heated herbal-leaf bolus massage that relieves pain and inflammation in joints, muscles, and connective
+                tissue.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="body">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/TRUC4278.PNG" alt="Shashti Shali Pind Swedan" loading="lazy" />
+              <span class="t-cat-tag">Body Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Shashti Shali Pind Swedan</h4>
+              <p>Specialised rice-bolus massage cooked in milk and herbs — deeply nourishing for muscle wasting and
+                neurological conditions.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="body">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/FILJ6037.PNG" alt="Shirodhara" loading="lazy" />
+              <span class="t-cat-tag">Body Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Shirodhara</h4>
+              <p>Continuous warm-oil stream over the forehead — calms the nervous system, relieves anxiety, insomnia,
+                and chronic headaches.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- ── Eye, Face &amp; Head ── -->
+          <article class="t-card" data-cat="eye-face">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/BCIH7701.PNG" alt="Netra Tarpan" loading="lazy" />
+              <span class="t-cat-tag">Eye Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Netra Tarpan</h4>
+              <p>Medicated ghee retained over the eyes in a dough ring — restores eye health, clarity, and treats
+                dry-eye and screen fatigue.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="eye-face">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/JUVN4724.PNG" alt="Bidalak" loading="lazy" />
+              <span class="t-cat-tag">Eye Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Bidalak</h4>
+              <p>Application of medicated paste over closed eyelids — soothes redness, eye strain, and inflammatory eye
+                disorders.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="eye-face">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/NBGE0557.PNG" alt="Ashchyotana" loading="lazy" />
+              <span class="t-cat-tag">Eye Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Ashchyotana</h4>
+              <p>Therapeutic eye drops of medicated decoctions — used for conjunctivitis, infections, and refractive
+                disorders.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="eye-face">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/QLLX1885.PNG" alt="Gandush / Kaval" loading="lazy" />
+              <span class="t-cat-tag">Oral Therapy</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Gandush / Kaval</h4>
+              <p>Medicated oil retained or swished in the mouth — strengthens gums, whitens teeth, and detoxifies the
+                oral cavity.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- ── Para-Surgical ── -->
+          <article class="t-card" data-cat="para-surgical">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/FMLC2774.PNG" alt="Jalaukavacharan (Leech Therapy)" loading="lazy" />
+              <span class="t-cat-tag">Para-Surgical</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Jalaukavacharan (Leech Therapy)</h4>
+              <p>Sterile medicinal leeches draw out toxic blood — highly effective for chronic skin disorders and
+                varicose veins.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="para-surgical">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/QTWY5804.PNG" alt="Cupping Therapy" loading="lazy" />
+              <span class="t-cat-tag">Para-Surgical</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Cupping Therapy</h4>
+              <p>Therapeutic vacuum cups release fascial restrictions and improve micro-circulation — ideal for back
+                pain and muscle tightness.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- ── Reversal Programs ── -->
+          <article class="t-card" data-cat="reversal">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/BIQK2224.PNG" alt="PCOD/PCOS Reversal Program" loading="lazy" />
+              <span class="t-cat-tag">Reversal Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>PCOD / PCOS Reversal Program</h4>
+              <p>Hormone-balancing protocol with diet, lifestyle, and Panchakarma — addresses root causes of PCOD/PCOS
+                naturally.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="reversal">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/CRTX7170.PNG" alt="Fatty Liver Reversal Program" loading="lazy" />
+              <span class="t-cat-tag">Reversal Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Fatty Liver Reversal Program</h4>
+              <p>Liver-detoxifying therapies and herbal Rasayanas that reverse non-alcoholic fatty liver and restore
+                enzyme function.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="reversal">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/EQVV7284.PNG" alt="Cholesterol/Blockage Reversal Program" loading="lazy" />
+              <span class="t-cat-tag">Reversal Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Cholesterol / Blockage Reversal</h4>
+              <p>Holistic plan combining diet, herbs, and detox to reduce LDL cholesterol and clear arterial blockages
+                naturally.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="reversal">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/IWNR3804.PNG" alt="Diabetes (DM-2) Reversal Program" loading="lazy" />
+              <span class="t-cat-tag">Reversal Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Diabetes (DM-2) Reversal Program</h4>
+              <p>Comprehensive metabolic protocol that improves insulin sensitivity and aims to reverse type-2 diabetes
+                long-term.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="reversal">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/OHWK5041.PNG" alt="BP (Hypertension) Reversal Program" loading="lazy" />
+              <span class="t-cat-tag">Reversal Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>BP (Hypertension) Reversal</h4>
+              <p>Stress-reduction therapies, herbs, and lifestyle redesign to manage and reverse high blood pressure
+                safely.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- ── Wellness Programs ── -->
+          <article class="t-card" data-cat="wellness">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/UCGA4859.PNG" alt="Gut Reset Program" loading="lazy" />
+              <span class="t-cat-tag">Wellness Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Gut Reset Program</h4>
+              <p>Cleanses Ama, restores Agni, and rebuilds gut microbiome — for chronic digestive issues, IBS, and
+                bloating.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="wellness">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/EESE2671.PNG" alt="Psychiatric Care Program" loading="lazy" />
+              <span class="t-cat-tag">Wellness Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Psychiatric Care Program</h4>
+              <p>Ayurvedic mental health support combining Medhya Rasayanas, Shirodhara, and counselling for anxiety,
+                depression, and insomnia.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="wellness">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/VIVW2880.PNG" alt="Geriatric Care Program" loading="lazy" />
+              <span class="t-cat-tag">Wellness Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Geriatric Care Program</h4>
+              <p>Tailored rejuvenation for seniors — strengthens immunity, joints, and cognitive function while
+                improving quality of life.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="wellness">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/SKVC3418.PNG" alt="Women Wellness Program" loading="lazy" />
+              <span class="t-cat-tag">Wellness Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Women Wellness Program</h4>
+              <p>Comprehensive program addressing menstrual, hormonal, and stress-related concerns specific to women's
+                health.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="wellness">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/QCZL2738.PNG" alt="Relaxation/Rejuvenation Program" loading="lazy" />
+              <span class="t-cat-tag">Wellness Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Relaxation / Rejuvenation Program</h4>
+              <p>Multi-day spa retreat blending Abhyanga, Shirodhara, and Rasayana herbs to recharge body and mind.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="wellness">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/DSOR9665.PNG" alt="NRI Rejuvenation Program" loading="lazy" />
+              <span class="t-cat-tag">Wellness Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>NRI Rejuvenation Program</h4>
+              <p>Time-optimised wellness intensives for NRIs to achieve deep healing during short visits to India.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="wellness reversal">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/JSVJ8325.PNG" alt="Ayurvedic Weight Management" loading="lazy" />
+              <span class="t-cat-tag">Wellness Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Ayurvedic Weight Management</h4>
+              <p>Personalised plan with Udwartan, herbal medicines, diet, and yoga to achieve sustainable, healthy
+                weight goals.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="wellness">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/CJTY0489.PNG" alt="Arthritis Treatment" loading="lazy" />
+              <span class="t-cat-tag">Wellness Program</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Arthritis Treatment</h4>
+              <p>Anti-inflammatory therapies, Bastis, and Rasayanas that relieve joint pain and slow degenerative
+                changes.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- ── Mother &amp; Child ── -->
+          <article class="t-card" data-cat="mother-child">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/IWFT3044.PNG" alt="Infertility / IVF Success Program" loading="lazy" />
+              <span class="t-cat-tag">Mother &amp; Child</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Infertility / IVF Success Program</h4>
+              <p>Specialised fertility care for couples — supports natural conception or boosts IVF outcomes through
+                Ayurvedic protocols.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="mother-child">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/WDWC3437.PNG" alt="Garbhadhan Sanskar" loading="lazy" />
+              <span class="t-cat-tag">Mother &amp; Child</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Garbhadhan Sanskar</h4>
+              <p>Pre-conception purification ritual that prepares both partners physically and mentally for healthy
+                conception.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="mother-child">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/YHGD7355.PNG" alt="Punsavan / Simantonnayan Sanskar" loading="lazy" />
+              <span class="t-cat-tag">Mother &amp; Child</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Punsavan / Simantonnayan Sanskar</h4>
+              <p>Classical pregnancy rituals performed during specific months to ensure healthy fetal development and a
+                smooth pregnancy.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="mother-child">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/FGDN1702.PNG" alt="Masanumasik Garbhini Paricharya" loading="lazy" />
+              <span class="t-cat-tag">Mother &amp; Child</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Masanumasik Garbhini Paricharya</h4>
+              <p>Month-by-month pregnancy care with diet, herbs, and lifestyle recommendations tailored for each
+                gestational stage.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="mother-child">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/WEZC8497.PNG" alt="Masanumasik Herbs" loading="lazy" />
+              <span class="t-cat-tag">Mother &amp; Child</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Masanumasik Herbs</h4>
+              <p>Twelve curated monthly herbal supplements supporting maternal and fetal health throughout pregnancy.
+              </p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="mother-child">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/PFUA1768.PNG" alt="Postpartum Rejuvenation Program" loading="lazy" />
+              <span class="t-cat-tag">Mother &amp; Child</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Postpartum Rejuvenation Program</h4>
+              <p>Restorative care for new mothers — repairs tissues, restores strength, and supports emotional
+                well-being after childbirth.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="mother-child">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/JAIF8923.PNG" alt="Lactation / Baby Care Counseling" loading="lazy" />
+              <span class="t-cat-tag">Mother &amp; Child</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Lactation / Baby Care Counseling</h4>
+              <p>Expert guidance on breastfeeding, baby massage, and infant nutrition — rooted in classical Ayurvedic
+                principles.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="mother-child">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/OWZI6516.PNG" alt="Suvarnaprashan" loading="lazy" />
+              <span class="t-cat-tag">Mother &amp; Child</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Suvarnaprashan</h4>
+              <p>Gold-infused herbal drops for children — boosts immunity, intelligence, digestion, and overall growth.
+              </p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <!-- ── Beauty &amp; Skin ── -->
+          <article class="t-card" data-cat="beauty">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/JIST2102.PNG" alt="Ayurvedic Facial" loading="lazy" />
+              <span class="t-cat-tag">Beauty</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Ayurvedic Facial</h4>
+              <p>Multi-step herbal facial that purifies, nourishes, and reveals naturally radiant skin from within.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="beauty">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/IEKJ7306.PNG" alt="Ayurvedic Manicure-Pedicure" loading="lazy" />
+              <span class="t-cat-tag">Beauty</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Ayurvedic Manicure-Pedicure</h4>
+              <p>Herbal hand and foot care with detoxifying scrubs and oil massage — relaxing, rejuvenating, and
+                grounding.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="beauty">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/TORV6407.PNG" alt="Ayurvedic Hair Treatment" loading="lazy" />
+              <span class="t-cat-tag">Beauty</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Ayurvedic Hair Treatment</h4>
+              <p>Medicated oil therapies and Shirodhara for hair fall, dandruff, premature greying, and overall scalp
+                health.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="beauty">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/KRVV5945.PNG" alt="Ayurvedic Alopecia Treatment" loading="lazy" />
+              <span class="t-cat-tag">Beauty</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Ayurvedic Alopecia Treatment</h4>
+              <p>Targeted scalp therapies and herbal remedies that address the root causes of patchy hair loss and
+                regrowth.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="beauty">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/VTRY7242.PNG" alt="Ayurvedic Anti-Pimple Treatment" loading="lazy" />
+              <span class="t-cat-tag">Beauty</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Ayurvedic Anti-Pimple Treatment</h4>
+              <p>Skin-purifying herbs, blood-cleansing therapies, and topical pastes to clear acne and prevent
+                recurrence.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="beauty">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/VTSB2819.PNG" alt="Ayurvedic Anti-Wrinkle Treatment" loading="lazy" />
+              <span class="t-cat-tag">Beauty</span>
+            </div>
+            <div class="t-card-body">
+              <h4>Ayurvedic Anti-Wrinkle Treatment</h4>
+              <p>Rejuvenating facial therapies and Rasayanas that smooth fine lines and restore youthful skin tone.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </article>
+
+          <article class="t-card" data-cat="beauty">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/DZKE8189.PNG" alt="Ayurvedic Pre Wedding Bridal/Groom Treatment"
                 loading="lazy" />
+              <span class="t-cat-tag">Beauty</span>
             </div>
-            <div class="body">
-              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i
-                  class="fas fa-mortar-pestle"></i></div>
-              <h4>Upanah Sweda</h4>
-              <p>Herbal paste poultice applied to affected joints producing deep therapeutic sweat that relieves
-                stiffness and swelling.</p>
+            <div class="t-card-body">
+              <h4>Pre Wedding Bridal / Groom Treatment</h4>
+              <p>Multi-week purifying and beautifying protocol for brides and grooms to glow on their special day.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
             </div>
-          </div>
+          </article>
 
-          <div class="treatment-card-sm">
-            <div class="img-wrap">
-              <img src="images/lepan_new.png" alt="Lepan herbal paste therapy" width="300" height="172"
-                loading="lazy" />
+          <!-- ── Diagnosis &amp; Diet ── -->
+          <article class="t-card" data-cat="diagnosis">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/BMCK3105.PNG" alt="Nadi / Prakriti Parikshan" loading="lazy" />
+              <span class="t-cat-tag">Diagnosis</span>
             </div>
-            <div class="body">
-              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-hand-dots"></i>
-              </div>
-              <h4>Lepan</h4>
-              <p>Application of medicated herbal paste over the body to treat skin diseases, inflammation, oedema, and
-                joint stiffness.</p>
+            <div class="t-card-body">
+              <h4>Nadi / Prakriti Parikshan</h4>
+              <p>Pulse-based diagnosis to identify your unique mind-body constitution — Vata, Pitta, and Kapha balance.
+              </p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
             </div>
-          </div>
+          </article>
 
-          <div class="treatment-card-sm">
-            <div class="img-wrap">
-              <img src="images/shiro_pichu.png" alt="Shiro Pichu therapy" width="300" height="172" loading="lazy" />
+          <article class="t-card" data-cat="diagnosis">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/XUSL9419.PNG" alt="Nadi / Vikriti Parikshan" loading="lazy" />
+              <span class="t-cat-tag">Diagnosis</span>
             </div>
-            <div class="body">
-              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-circle-dot"></i>
-              </div>
-              <h4>Shiro Pichu</h4>
-              <p>Continuous application of medicated oil-soaked cotton pad on the spine or head — ideal for cervical
-                spondylosis and headaches.</p>
+            <div class="t-card-body">
+              <h4>Nadi / Vikriti Parikshan</h4>
+              <p>Pulse and clinical assessment to identify current imbalances and disease states for targeted treatment.
+              </p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
             </div>
-          </div>
+          </article>
 
-          <div class="treatment-card-sm">
-            <div class="img-wrap">
-              <img src="images/agnikarma.jpg" alt="Agnikarma Therapy">
+          <article class="t-card" data-cat="diagnosis">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/DTKX5317.PNG" alt="Customized Diet Plans" loading="lazy" />
+              <span class="t-cat-tag">Diet Plan</span>
             </div>
-            <div class="body">
-              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-sun"></i></div>
-              <h4>Agnikarma</h4>
-              <p>Ancient thermal micro-cauterisation to treat chronic musculoskeletal pain, plantar fasciitis, and
-                neuropathic conditions.</p>
+            <div class="t-card-body">
+              <h4>Customized Diet Plans</h4>
+              <p>Personalised Ayurvedic meal plans crafted around your dosha, season, lifestyle, and individual health
+                goals.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
             </div>
-          </div>
+          </article>
 
-          <div class="treatment-card-sm">
-            <div class="img-wrap">
-              <img src="images/avagaha.jpg" alt="Avagaha Therapy">
+          <article class="t-card" data-cat="diagnosis">
+            <div class="t-card-img">
+              <img src="Ayurveda%20Photo/XSEM3061.PNG" alt="Ayurvedic Dietics" loading="lazy" />
+              <span class="t-cat-tag">Diet Plan</span>
             </div>
-            <div class="body">
-              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-bath"></i></div>
-              <h4>Avagaha</h4>
-              <p>Medicated herbal sitz bath — effective for haemorrhoids, fistula, pelvic disorders, and inflammatory
-                skin conditions.</p>
+            <div class="t-card-body">
+              <h4>Ayurvedic Dietics</h4>
+              <p>Detailed dietary guidance using Ahara, Ritucharya, and Dinacharya principles for lifelong wellness.</p>
+              <a href="contact.html" class="t-card-link">Book Treatment <i class="fas fa-arrow-right"></i></a>
             </div>
-          </div>
-
-          <div class="treatment-card-sm">
-            <div class="img-wrap">
-              <img src="images/shirodhara.png" alt="Shiro Abhyanga medicated head massage" width="300" height="172"
-                loading="lazy" />
-            </div>
-            <div class="body">
-              <div class="icon-wrap icon-box icon-box-sm" style="margin-bottom:10px"><i class="fas fa-brain"></i></div>
-              <h4>Shiro Abhyanga</h4>
-              <p>Classical medicated head massage stimulating marma points to relieve stress, migraine, hair loss, and
-                insomnia.</p>
-            </div>
-          </div>
+          </article>
 
         </div>
       </div>
