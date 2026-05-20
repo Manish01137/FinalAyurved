@@ -242,22 +242,26 @@
           <div class="form-card" data-aos="fade-right">
             <h2>Book an Appointment</h2>
             <p>Fill in your details below and our team will reach out to confirm your slot within 24 hours.</p>
-            <form id="contact-form-main" novalidate>
+            <form id="contact-form-main" data-web3forms novalidate>
+              <!-- Honeypot field for spam protection (must stay empty) -->
+              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="subject" value="New appointment request from Aksharam Ayurved website" />
+              <input type="hidden" name="from_name" value="Aksharam Ayurved Website" />
               <div class="form-group">
                 <label for="cf-name">Full Name *</label>
-                <input type="text" id="cf-name" class="form-control" placeholder="Enter your full name" required />
+                <input type="text" id="cf-name" name="name" class="form-control" placeholder="Enter your full name" required />
               </div>
               <div class="form-group">
                 <label for="cf-email">Email Address *</label>
-                <input type="email" id="cf-email" class="form-control" placeholder="your@email.com" required />
+                <input type="email" id="cf-email" name="email" class="form-control" placeholder="your@email.com" required />
               </div>
               <div class="form-group">
                 <label for="cf-phone">Contact Number *</label>
-                <input type="tel" id="cf-phone" class="form-control" placeholder="+91 XXXXX XXXXX" required />
+                <input type="tel" id="cf-phone" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX" required />
               </div>
               <div class="form-group">
                 <label for="cf-service">Service of Interest</label>
-                <select id="cf-service" class="form-control">
+                <select id="cf-service" name="service" class="form-control">
                   <option value="" disabled selected>Select a treatment or program…</option>
                   <option>Panchakarma Program</option>
                   <option>Beej Shuddhi &amp; Fertility</option>
@@ -273,12 +277,12 @@
               </div>
               <div class="form-group">
                 <label for="cf-message">Additional Information</label>
-                <textarea id="cf-message" class="form-control"
+                <textarea id="cf-message" name="message" class="form-control"
                   placeholder="Briefly describe your health concern, current medications, or any questions…"></textarea>
               </div>
               <div class="form-group">
                 <div class="checkbox-group">
-                  <input type="checkbox" id="cf-terms" required />
+                  <input type="checkbox" id="cf-terms" name="consent" value="yes" required />
                   <label for="cf-terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy
                       Policy</a>, and consent to be contacted by Aksharam Ayurved.</label>
                 </div>

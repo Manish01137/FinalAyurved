@@ -512,22 +512,26 @@
             <h3 style="color:var(--green-900);margin-bottom:6px">Book an Appointment</h3>
             <p style="font-size:.87rem;margin-bottom:24px">Fill in your details and we'll get back to you within 24
               hours.</p>
-            <form id="home-consultation-form" novalidate>
+            <form id="home-consultation-form" data-web3forms novalidate>
+              <!-- Honeypot field for spam protection (must stay empty) -->
+              <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+              <input type="hidden" name="subject" value="New consultation request from Aksharam Ayurved website (Home)" />
+              <input type="hidden" name="from_name" value="Aksharam Ayurved Website" />
               <div class="form-group">
                 <label for="hc-name">Full Name *</label>
-                <input type="text" id="hc-name" class="form-control" placeholder="Your full name" required />
+                <input type="text" id="hc-name" name="name" class="form-control" placeholder="Your full name" required />
               </div>
               <div class="form-group">
                 <label for="hc-email">Email Address *</label>
-                <input type="email" id="hc-email" class="form-control" placeholder="your@email.com" required />
+                <input type="email" id="hc-email" name="email" class="form-control" placeholder="your@email.com" required />
               </div>
               <div class="form-group">
                 <label for="hc-phone">Contact Number *</label>
-                <input type="tel" id="hc-phone" class="form-control" placeholder="+91 XXXXX XXXXX" required />
+                <input type="tel" id="hc-phone" name="phone" class="form-control" placeholder="+91 XXXXX XXXXX" required />
               </div>
               <div class="form-group">
                 <label for="hc-message">Additional Message</label>
-                <textarea id="hc-message" class="form-control"
+                <textarea id="hc-message" name="message" class="form-control"
                   placeholder="Describe your health concern or treatment of interest…"></textarea>
               </div>
               <button type="submit" class="btn btn-cream form-submit" id="home-form-submit"
@@ -614,7 +618,7 @@
           <div class="footer-contact-item">
             <div class="footer-contact-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div class="footer-contact-text">
-              <strong>Address</strong><a href="https://www.google.com/maps/place/AKSHARAM+AYURVED+-+Best+Panchkarma+%26+Ayurved+Consultation+Centre+in+Ahmedabad/@23.04354,72.5877883,17z" target="_blank" rel="noopener"><span>AKSHARAM
+              <strong>Address</strong><a href="https://www.google.com/maps/place/AKSHARAM+AYURVED+-+Best+Panchkarma+%26+Ayurved+Consultation+Centre+in+Ahmedabad/@23.04354,72.5877883,17z/data=!3m1!4b1!4m6!3m5!1s0x395e85dd0e9b44eb:0xefe2cbdb925ef678!8m2!3d23.04354!4d72.5877883!16s%2Fg%2F11s5wh3pxm?hl=en&entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener"><span>AKSHARAM
                 AYURVED - Best Panchkarma &amp; Ayurved Consultation Centre in Ahmedabad F - 419, Sumel 11, Near BAPS Namaste Circle, Shahibaug, Amdavad - 380004.</span></a>
             </div>
           </div>

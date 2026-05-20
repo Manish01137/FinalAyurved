@@ -226,8 +226,12 @@
             <h2>Receive monthly Ayurvedic wisdom in your inbox</h2>
             <p>Seasonal protocols, recipes, and articles — written by Vaidya Dolly. No spam, ever.</p>
           </div>
-          <form class="newsletter-form" onsubmit="event.preventDefault();">
-            <input type="email" placeholder="your.email@example.com" required />
+          <form id="newsletter-subscribe-form" class="newsletter-form" data-web3forms novalidate>
+            <!-- Honeypot field for spam protection (must stay empty) -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
+            <input type="hidden" name="subject" value="New newsletter subscription from Aksharam Ayurved website" />
+            <input type="hidden" name="from_name" value="Aksharam Ayurved Newsletter" />
+            <input type="email" name="email" placeholder="your.email@example.com" required />
             <button type="submit" class="btn btn-gold">Subscribe <i class="fas fa-paper-plane"></i></button>
           </form>
         </div>

@@ -171,10 +171,16 @@
 
 /* ── FORM SUBMISSION ────────────────────────────────────────── */
 (function () {
+  // Web3Forms access key — get a free one at https://web3forms.com
+  // by entering aksharamayurved@gmail.com. Submissions are delivered to that inbox.
+  const WEB3FORMS_ACCESS_KEY = 'a9b1c6ca-1437-45f0-8173-5e9cf58ab00d';
+
   const forms = document.querySelectorAll('form[id]');
   forms.forEach(form => {
     const btn = form.querySelector('button[type="submit"]');
-    form.addEventListener('submit', e => {
+    const useWeb3Forms = form.hasAttribute('data-web3forms');
+
+    form.addEventListener('submit', async e => {
       e.preventDefault();
 
       // Basic validation
@@ -190,21 +196,55 @@
       });
       if (!valid) return;
 
-      // Simulate send
       const original = btn.innerHTML;
       btn.innerHTML = '<i class="fas fa-circle-notch fa-spin"></i> Sending…';
       btn.disabled = true;
 
-      setTimeout(() => {
+      const restoreBtn = (delay) => setTimeout(() => {
+        btn.innerHTML = original;
+        btn.style.background = '';
+        btn.disabled = false;
+      }, delay);
+
+      const showSuccess = () => {
         btn.innerHTML = '<i class="fas fa-circle-check"></i> Message Sent!';
         btn.style.background = '#38a169';
         form.reset();
-        setTimeout(() => {
-          btn.innerHTML = original;
-          btn.style.background = '';
-          btn.disabled = false;
-        }, 3500);
-      }, 1800);
+        restoreBtn(3500);
+      };
+
+      const showError = () => {
+        btn.innerHTML = '<i class="fas fa-circle-exclamation"></i> Failed — please try again';
+        btn.style.background = '#e53e3e';
+        restoreBtn(4000);
+      };
+
+      if (useWeb3Forms) {
+        try {
+          const data = new FormData(form);
+          data.set('access_key', WEB3FORMS_ACCESS_KEY);
+          if (!data.get('subject')) {
+            data.set('subject', 'New enquiry from Aksharam Ayurved website');
+          }
+          const res = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: data
+          });
+          const json = await res.json().catch(() => ({}));
+          if (res.ok && json.success) {
+            showSuccess();
+          } else {
+            console.error('Web3Forms submission failed:', json);
+            showError();
+          }
+        } catch (err) {
+          console.error('Network error submitting form:', err);
+          showError();
+        }
+      } else {
+        // Fallback for forms without Web3Forms integration (e.g. newsletter)
+        setTimeout(showSuccess, 1800);
+      }
     });
 
     // Live border reset on input
